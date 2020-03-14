@@ -8,6 +8,10 @@
     background-color: #474452;
 }
 
+button {
+    color: #dbcdcd!important;
+}
+
 /*makes majority of background transparent too*/
 .s-enable-course-dashboard.theme-2016-layout #main {
     background: transparent!important;
@@ -16,6 +20,11 @@
 /* sExtlink-processed are links that lead to other pages */
 .sExtlink-processed {
     color: #dbcdcd!important;
+}
+
+/*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
+._pendo-launcher-badge_ {
+    visibility: hidden;
 }
 
 /* ---------- Styles for the main feed ----------- */
@@ -36,7 +45,7 @@ li, #smart-box, .s-like-sentence, .comment {
 
 /*These next 3 have to do with the comment box*/
 .s-like-sentence {
-    color: #aea3a3
+    color: #aea3a3;
 }
 .feed-comments {
     background-color: #3f3d46!important;
@@ -50,3 +59,30 @@ li, #smart-box, .s-like-sentence, .comment {
 
 /* -------- Styles for right-hand column --------- */
 
+#right-column-inner {
+    background-color: transparent!important;
+}
+
+.overdue-submissions, .upcoming-events {
+    background-color: #423f4a!important;
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.15)!important;
+}
+
+h3 {
+    color: #cab6b6!important;
+}
+
+h4 {
+    color: #bdb5b5!important;
+}
+
+/*Border color fix for rh column*/
+h3, h4 {
+    border-color: #736868!important;
+}
+
+/* ------- Style for courses view --------- */
+
+._2mWUT {
+    background-color: black;
+}
