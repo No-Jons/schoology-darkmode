@@ -1,0 +1,52 @@
+/* ---------- Universal page styling ------------ */
+
+/*outer edge background color*/
+#body {
+    background-color: #474452!important;
+}
+#wrapper {
+    background-color: #474452;
+}
+
+/*makes majority of background transparent too*/
+.s-enable-course-dashboard.theme-2016-layout #main {
+    background: transparent!important;
+}
+
+/* sExtlink-processed are links that lead to other pages */
+.sExtlink-processed {
+    color: #dbcdcd!important;
+}
+
+/* ---------- Styles for the main feed ----------- */
+
+#home-feed-container {
+    background-color: #423f4a!important;
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.15)!important;
+}
+
+.update-body {
+    color: #d5c2c2!important;
+}
+
+/*This has to do with the dividing lines.*/
+li, #smart-box, .s-like-sentence, .comment {
+    border-color: #736868!important;
+}
+
+/*These next 3 have to do with the comment box*/
+.s-like-sentence {
+    color: #aea3a3
+}
+.feed-comments {
+    background-color: #3f3d46!important;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.15)!important;
+}
+.form-textarea {
+    background-color: transparent!important;
+    border: 1px dashed #b7a7a7;
+    border-radius: 4px;
+}
+
+/* -------- Styles for right-hand column --------- */
+
