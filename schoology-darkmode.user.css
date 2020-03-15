@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Schoology Dark Theme
 @namespace    github.com/PseudonymPatel/schoology-darkmode
-@version      0.1.0
+@version      0.1.1
 @license      GPL-3.0
 @preprocessor default
 
@@ -10,17 +10,17 @@
 @-moz-document domain("schoology.newton.k12.ma.us") {
     /* ---------- Color variables!! ----------------- */
     :root {
-        --main-color: #363844;
+        --main-color: #1E1E1E;
         --shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
-        --link-text-color: #dbcdcd;
-        --nav-color: whitesmoke;
-        --text-color: whitesmoke;
-        --border-color: #736868;
+        --link-text-color: #75afe0e3;
+        --nav-color: #e0e0e0;
+        --text-color: #e0e0e0;
+        --border-color: #494949;
     }
     /* ---------- Universal page styling ------------ */
     /*outer edge background color*/
     #body {
-        background-color: #45424a!important;
+        background-color: #121212!important;
     }
 
     #main-content-wrapper {
@@ -72,7 +72,7 @@
         border-color: var(--border-color)!important;
     }
 
-    /*These next 3 have to do with the comment box*/
+    /*These next 4 have to do with the comment box*/
     .s-like-sentence {
         color: var(--text-color);
     }
@@ -88,6 +88,10 @@
         border-radius: 4px;
     }
 
+    .comment-body-wrapper {
+        color: var(--text-color);
+    }
+    
     /* -------- Styles for right-hand column --------- */
     #right-column-inner {
         background-color: transparent!important;
@@ -116,7 +120,7 @@
     ._1Z0RM {
         background-color: var(--main-color);
     }
-
+    
     ._2UdSL {
         border-color: var(--border-color);
     }
