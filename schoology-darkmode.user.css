@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Schoology Dark Theme
 @namespace    github.com/PseudonymPatel/schoology-darkmode
-@version      0.1.1
+@version      0.2.0
 @license      GPL-3.0
 @preprocessor default
 
@@ -18,6 +18,7 @@
         --border-color: #494949;
     }
     /* ---------- Universal page styling ------------ */
+    
     /*outer edge background color*/
     #body {
         background-color: #121212!important;
@@ -78,7 +79,7 @@
     }
 
     .feed-comments {
-        background-color: var(--main-color)!important;
+        background-color: #232323!important;
         box-shadow: var(--shadow)!important;
     }
 
@@ -134,18 +135,23 @@
     }
 
     /* -------- Styles for each course ------------ */
-    .leaf, .collapsed {
-        background-color: var(--main-color)!important;
-    }
 
     /* Selected left menu item*/
     #sidebar-left .active-trail-dist-1 a {
-        background-color: #37343e!important;
+        background-color: var(--main-color)!important;
         border-width: 0px!important;
     }
 
     /*Change the white line borders. */
-    #folder-contents-table .folder-contents-cell, .materials-top, #center-top, .gradebook-course.hierarchical-grading-report .td-content-wrapper, #s-update-create-form {
+    #folder-contents-table .folder-contents-cell, 
+    .materials-top, 
+    #center-top, 
+    .gradebook-course.hierarchical-grading-report .td-content-wrapper, 
+    #s-update-create-form, 
+    .roster-top,
+    .enrollment-actions,
+    .user-picture,
+    .user-name {
         border-color: var(--border-color)!important;
     }
 
@@ -172,7 +178,23 @@
         border-color: transparent!important;
     }
 
-    .course-grade-text, #event-upcoming {
+    .course-title a, .school-name a, #center-inner h2, .course-grade-text, #event-upcoming {
         color: var(--text-color)!important;
+    }
+    
+    .td-content-wrapper .title {
+        color: var(--text-color)!important
+    }
+    
+    .has-children .title {
+        color: var(--link-text-color)!important;
+    }
+    
+    #sidebar-left {
+        color: var(--text-color)!important;
+    }
+    
+    .roster-top, .right, .enrollment-view-wrapper {
+        background-color: transparent;
     }
 }
