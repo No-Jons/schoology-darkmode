@@ -58,6 +58,26 @@
         visibility: hidden;
     }
 
+    /* ---------- Login page syling ------------------ */
+    
+    .login-page, #supplementary, #page-footer {
+        background-color: #121212;
+    }
+    
+    .login-content {
+        background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important;
+        border-radius: 0px!important;
+    }
+    
+    .h3, .school-name {
+        color: var(--text-color)
+    }
+    
+    .form-text, input[type=text] {
+        background-color: var(--text-color);
+    }
+    
     /* ---------- Styles for the main feed ----------- */
     #home-feed-container {
         background-color: var(--main-color)!important;
@@ -169,7 +189,7 @@
     }
 
     .notification-settings-wrapper, #taught-courses-switcher {
-        background-color:red!important
+        background-color:black!important;
     }
 
     .summary-course {
@@ -196,5 +216,39 @@
     
     .roster-top, .right, .enrollment-view-wrapper {
         background-color: transparent;
+    }
+    
+    #center-top .content-top-upper {
+        background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important;
+    }
+    
+    .link-btn, a.ui-selectmenu {
+        background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color);
+    }
+    
+    /* ------------ Calendar Settings and other misc pages -------------- */
+    
+    .popups-body {
+        background-color: var(--main-color);
+    }
+    
+    .fc-button {
+        background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color)!important;
+    }
+    
+    .fc-view tbody td {
+        border-color: var(--border-color);
+    }
+    
+    .fc-view tbody td:hover {
+        background-color: #232323;
+    }
+    
+    .fc-event-skin.ev-course, .legend-course {
+        background-color: var(--link-text-color);
+        border-color: var(--border-color)
     }
 }
