@@ -7,765 +7,478 @@
 
 ==/UserStyle== */
 
-@-moz-document domain("<YOUR DOMAIN HERE>") {
+@-moz-document domain("olympia.schoology.com") {
     /* ---------- Color variables!! ----------------- */
-    :root {
-        --main-color: #1E1E1E; --secondary: #383838; --shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15); --link-text-color: #75afe0e3; --nav-color: #e0e0e0; --text-color: #e0e0e0; --border-color: #494949;
-    }
+    :root { --main-color: #1E1E1E;
+        --secondary: #383838;
+        --shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
+        --link-text-color: #75afe0e3;
+        --nav-color: #e0e0e0;
+        --text-color: #e0e0e0;
+        --border-color: #494949; }
 
     /* ---------- Universal page styling ------------ */
     /*outer edge background color*/
-    #body {
-        background-color: #121212!important;
-    }
+    #body { background-color: #121212!important; }
 
-    #main-content-wrapper {
-        background-color: var(--main-color); box-shadow: var(--shadow)!important; border-width: 0px!important;
-    }
+    #main-content-wrapper { background-color: var(--main-color);
+        box-shadow: var(--shadow)!important;
+        border-width: 0px!important; }
 
-    .theme-2016-layout #main-content-wrapper {
-        padding-right: 20px;
-    }
+    .theme-2016-layout #main-content-wrapper { padding-right: 20px; }
 
-    #right-column {
-        margin-right: 0px;
-    }
+    #right-column { margin-right: 0px; }
 
     /* Navigation bar text styling*/
-    button, ._1tpub .sExtlink-processed {
-        color: var(--nav-color)!important;
-    }
+    button, ._1tpub .sExtlink-processed { color: var(--nav-color)!important; }
 
     /*makes majority of background transparent too*/
-    .s-enable-course-dashboard.theme-2016-layout #main {
-        background: transparent!important;
-    }
+    .s-enable-course-dashboard.theme-2016-layout #main { background: transparent!important; }
 
     /* sExtlink-processed are links that lead to other pages */
-    .sExtlink-processed {
-        color: var(--link-text-color)!important;
-    }
+    .sExtlink-processed { color: var(--link-text-color)!important; }
 
     /*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
-    ._pendo-launcher-badge_ {
-        visibility: hidden;
-    }
+    ._pendo-launcher-badge_ { visibility: hidden; }
 
     /* ---------- Login page syling ------------------ */
-    .login-page, #supplementary, #page-footer {
-        background-color: #121212;
-    }
+    .login-page, #supplementary, #page-footer { background-color: #121212; }
 
-    .login-content {
-        background-color: var(--main-color)!important; box-shadow: var(--shadow)!important; border-radius: 0px!important;
-    }
+    .login-content { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important;
+        border-radius: 0px!important; }
 
-    .h3, .school-name {
-        color: var(--text-color)
-    }
+    .h3, .school-name { color: var(--text-color) }
 
-    .form-text, input[type=text] {
-        background-color: var(--main-color); color: var(--text-color)!important;
-    }
+    .form-text, input[type=text] { background-color: var(--main-color);
+        color: var(--text-color)!important; }
 
-    .form-text, input[type=text]:focus {
-        border-radius: 4px;
-    }
+    .form-text, input[type=text]:focus { border-radius: 4px; }
 
     /* ---------- Styles for the main feed ----------- */
-    #home-feed-container {
-        background-color: var(--main-color)!important; box-shadow: var(--shadow)!important;
-    }
+    #home-feed-container { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important; }
 
-    .update-body {
-        color: var(--text-color)!important;
-    }
+    .update-body { color: var(--text-color)!important; }
 
     /*This has to do with the dividing lines.*/
-    li, #smart-box, .s-like-sentence, .comment {
-        border-color: var(--border-color)!important;
-    }
+    li, #smart-box, .s-like-sentence, .comment { border-color: var(--border-color)!important; }
 
     /*These next 4 have to do with the comment box*/
-    .s-like-sentence {
-        color: var(--text-color);
-    }
+    .s-like-sentence { color: var(--text-color); }
 
-    .feed-comments {
-        background-color: #232323!important; box-shadow: var(--shadow)!important;
-    }
+    .feed-comments { background-color: #232323!important;
+        box-shadow: var(--shadow)!important; }
 
-    .form-textarea {
-        background-color: transparent!important; border: 1px dashed #b7a7a7; /* TODO: Potentially change color? */
-        border-radius: 4px;
-    }
+    .form-textarea { background-color: transparent!important;
+        border: 1px dashed #b7a7a7;
+        /* TODO: Potentially change color? */
+        border-radius: 4px; }
 
-    .comment-body-wrapper {
-        color: var(--text-color);
-    }
+    .comment-body-wrapper { color: var(--text-color); }
 
     /* -------- Styles for right-hand column --------- */
-    #right-column-inner {
-        background-color: transparent!important;
-    }
+    #right-column-inner { background-color: transparent!important; }
 
-    .overdue-submissions, .upcoming-events {
-        background-color: var(--main-color)!important; box-shadow: var(--shadow)!important;
-    }
+    .overdue-submissions, .upcoming-events { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important; }
 
-    h3 {
-        /* Words "overdue" and "Upcoming" */
-        color: #cab6b6!important;
-    }
+    h3 { /* Words "overdue" and "Upcoming" */
+        color: #cab6b6!important; }
 
-    h4 {
-        /* Dates */
-        color: #bdb5b5!important;
-    }
+    h4 { /* Dates */
+        color: #bdb5b5!important; }
 
     /*Border color fix for rh column*/
-    h3, h4 {
-        border-color: var(--border-color)!important;
-    }
+    h3, h4 { border-color: var(--border-color)!important; }
 
     /* ------- Style for dropdown menus --------- */
     /* TODO: Is there a better option than random strings?? */
-    ._1Z0RM {
-        background-color: var(--main-color);
-    }
+    ._1Z0RM { background-color: var(--main-color); }
 
-    ._2UdSL {
-        border-color: var(--border-color);
-    }
+    ._2UdSL { border-color: var(--border-color); }
 
-    ._2qcpH {
-        color: var(--text-color);
-    }
+    ._2qcpH { color: var(--text-color); }
 
-    ._2T2dA {
-        background: none!important;
-    }
+    ._2T2dA { background: none!important; }
 
-    ._2T2dA a {
-        background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
+    ._2T2dA a { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
 
-    ._2T2dA a:hover {
-        background-color: var(--secondary)!important;
-    }
+    ._2T2dA a:hover { background-color: var(--secondary)!important; }
 
-    ._2qcpH {
-        background-color: var(--main-color)!important;
-    }
+    ._2qcpH { background-color: var(--main-color)!important; }
 
-    ._1Z0RM li a, ._1Z0RM li a span {
-        background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
+    ._1Z0RM li a, ._1Z0RM li a span { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
 
-    ._1Z0RM li a:hover, ._1Z0RM li a:hover > span {
-        background-color: var(--secondary)!important;
-    }
+    ._1Z0RM li a:hover, ._1Z0RM li a:hover > span { background-color: var(--secondary)!important; }
 
-    ._9e7c_ {
-        background-color: var(--shadow)!important;
-    }
+    ._9e7c_ { background-color: var(--shadow)!important; }
 
     /* Homepage Cards */
-    article {
-        box-shadow: var(--shadow)!important;
-    }
+    article { box-shadow: var(--shadow)!important; }
 
-    .sgy-card, .sgy-card .sgy-card-lens {
-        background-color: var(--main-color)!important;
-    }
+    .sgy-card, .sgy-card .sgy-card-lens { background-color: var(--main-color)!important; }
 
-    .sgy-card .sgy-multiline-ellipsis__split-part {
-        color: var(--text-color)!important;
-    }
+    .sgy-card .sgy-multiline-ellipsis__split-part { color: var(--text-color)!important; }
 
-    #attachment-selector {
-        background-color: var(--main-color)!important;
-    }
+    #attachment-selector { background-color: var(--main-color)!important; }
 
     /* -------- Styles for each course ------------ */
     /* Selected left menu item*/
-    #sidebar-left .active-trail-dist-1 a {
-        background-color: var(--main-color)!important; border-width: 0px!important;
-    }
+    #sidebar-left .active-trail-dist-1 a { background-color: var(--main-color)!important;
+        border-width: 0px!important; }
 
     /*Change the white line borders. */
-    #folder-contents-table .folder-contents-cell, .materials-top, #center-top, .gradebook-course.hierarchical-grading-report .td-content-wrapper, #s-update-create-form, .roster-top, .enrollment-actions, .user-picture, .user-name {
-        border-color: var(--border-color)!important;
-    }
+    #folder-contents-table .folder-contents-cell, .materials-top, #center-top, .gradebook-course.hierarchical-grading-report .td-content-wrapper, #s-update-create-form, .roster-top, .enrollment-actions, .user-picture, .user-name { border-color: var(--border-color)!important; }
 
-    #center-top {
-        background-color: var(--main-color)!important
-    }
+    #center-top { background-color: var(--main-color)!important }
 
-    .materials-filter-wrapper, .action-links {
-        background-color: var(--main-color);
-    }
+    .materials-filter-wrapper, .action-links { background-color: var(--main-color); }
 
-    .ui-widget {
-        background-color: var(--main-color); box-shadow: var(--shadow)!important;
-    }
+    .ui-widget { background-color: var(--main-color);
+        box-shadow: var(--shadow)!important; }
 
-    .notification-settings-wrapper, #taught-courses-switcher {
-        background-color: black!important;
-    }
+    .notification-settings-wrapper, #taught-courses-switcher { background-color: black!important; }
 
-    .summary-course {
-        background-color: var(--main-color)!important; box-shadow: var(--shadow)!important; border-color: transparent!important;
-    }
+    .summary-course { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important;
+        border-color: transparent!important; }
 
-    .course-title a, .school-name a, #center-inner h2, .course-grade-text, #event-upcoming {
+    .course-title a, .school-name a, #center-inner h2, .course-grade-text, #event-upcoming { color: var(--text-color)!important; }
+
+    li.active-trail .link-wrapper a { background-color: var(--main-color)!important;
         color: var(--text-color)!important;
-    }
+        margin: 0!important;
+        border: 5px var(--border-color)!important; }
 
-    li.active-trail .link-wrapper a {
-        background-color: var(--main-color)!important; color: var(--text-color)!important; margin: 0!important; border: 5px var(--border-color)!important;
-    }
+    .app-link .app-title { color: var(--text-color)!important; }
 
-    .app-link .app-title {
-        color: var(--text-color)!important;
-    }
+    li.active-trail .link-wrapper a.active, li.active-trail .link-wrapper a:hover, .app-link.active .app-title, .app-link:hover .app-title { color: var(--link-text-color)!important; }
 
-    li.active-trail .link-wrapper a.active, li.active-trail .link-wrapper a:hover, .app-link.active .app-title, .app-link:hover .app-title {
-        color: var(--link-text-color)!important;
-    }
+    .app-link { background-color: var(--main-color)!important;
+        margin: 0!important; }
 
-    .app-link {
-        background-color: var(--main-color)!important; margin: 0!important;
-    }
+    .app-launch-message, .link-btn.s-js-launch-button { color: var(--text-color)!important; }
 
-    .app-launch-message, .link-btn.s-js-launch-button {
-        color: var(--text-color)!important;
-    }
+    .materials-dropdown-arrow:hover > .materials-dropdown-arrow span { background-color: var(--main-color)!important;
+        color: white!important; }
 
-    .materials-dropdown-arrow:hover > .materials-dropdown-arrow span {
-        background-color: var(--main-color)!important; color: white!important;
-    }
+    .course-materials-folders { padding: 0!important;
+        border: 3px var(--main-color)!important; }
 
-    .course-materials-folders {
-        padding: 0!important; border: 3px var(--main-color)!important;
-    }
+    .course-materials-folders .item-list ul { background-color: var(--main-color)!important; }
 
-    .course-materials-folders .item-list ul {
-        background-color: var(--main-color)!important;
-    }
+    .td-content-wrapper .title { color: var(--text-color)!important; }
 
-    .td-content-wrapper .title {
-        color: var(--text-color)!important;
-    }
+    .has-children .title { color: var(--link-text-color)!important; }
 
-    .has-children .title {
-        color: var(--link-text-color)!important;
-    }
+    #sidebar-left { color: var(--text-color)!important; }
 
-    #sidebar-left {
-        color: var(--text-color)!important;
-    }
+    .roster-top, .right, .enrollment-view-wrapper { background-color: transparent; }
 
-    .roster-top, .right, .enrollment-view-wrapper {
-        background-color: transparent;
-    }
+    #center-top .content-top-upper { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    #center-top .content-top-upper {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
-
-    .link-btn, a.ui-selectmenu {
-        background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif"); border-color: var(--border-color);
-    }
+    .link-btn, a.ui-selectmenu { background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color); }
 
     /* Global Buttons */
-    .submit-buttons, .form-submit, .popups-buttons-inner {
+    .submit-buttons, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
+
+    .form-submit:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover { background-color: var(--secondary)!important; }
+
+    .submit-span-wrapper { border-color: var(--text-color)!important; }
+
+    .cancel-btn, #edit-cancel, #popup_cancel { background: none!important;
         background-color: var(--main-color)!important;
-    }
+        color: var(--text-color)!important; }
 
-    .form-submit:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover {
-        background-color: var(--secondary)!important;
-    }
-
-    .submit-span-wrapper {
-        border-color: var(--text-color)!important;
-    }
-
-    .cancel-btn, #edit-cancel, #popup_cancel {
-        background: none!important; background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
-
-    #popup_submit, #popup_close {
-        background: none!important; background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
-
-    .popups-buttons-inner span {
-        border-color: var(--border-color)!important;
-    }
-
-    .popups-processed, .action-links .clickable {
-        color: var(--text-color)!important;
-    }
-
-    .action-links-unfold .action-links-unfold-text.use-inline-image .action-links-unfold-icon {
-        clip: rect(600px, 50px, 610px, 0px)!important; top: -592px!important;
-    }
-
-    .action-links-unfold {
-        background: none!important; background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
-
-    .action-links-wrapper-junior .action-links-unfold:hover {
-        background: none!important; border: inherit!important; padding: 1px!important;
-    }
-
-    .action-links-unfold.active, .action-links-unfold:active {
+    #popup_submit, #popup_close { background: none!important;
         background-color: var(--main-color)!important;
-    }
+        color: var(--text-color)!important; }
 
-    .action-links .clickable:hover {
-        background-color: var(--secondary)!important;
-    }
+    .popups-buttons-inner span { border-color: var(--border-color)!important; }
 
-    .action-links {
-        padding: 0px!important;
-    }
+    .popups-processed, .action-links .clickable { color: var(--text-color)!important; }
 
-    .action-rename a {
-        background-position-y: -37px!important;
-    }
+    .action-links-unfold .action-links-unfold-text.use-inline-image .action-links-unfold-icon { clip: rect(600px, 50px, 610px, 0px)!important;
+        top: -592px!important; }
 
-    .action-rename a:hover {
-        background-position: 9px -55px!important;
-    }
+    .action-links-unfold { background: none!important;
+        background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .action-links-wrapper-junior .action-links-unfold:hover { background: none!important;
+        border: inherit!important;
+        padding: 1px!important; }
+
+    .action-links-unfold.active, .action-links-unfold:active { background-color: var(--main-color)!important; }
+
+    .action-links .clickable:hover { background-color: var(--secondary)!important; }
+
+    .action-links { padding: 0px!important; }
+
+    .action-rename a { background-position-y: -37px!important; }
+
+    .action-rename a:hover { background-position: 9px -55px!important; }
 
     /* Course updates */
-    .update-body p span {
-        color: var(--text-color)!important;
-    }
+    .update-body p span { color: var(--text-color)!important; }
 
-    .update-body p a span {
-        color: var(--link-text-color)!important;
-    }
+    .update-body p a span { color: var(--link-text-color)!important; }
 
     /* Notifications, Notifcation Settings Dropdown */
-    .notif-setting-dropdown {
-        background-color: var(--main-color)!important;
-    }
+    .notif-setting-dropdown { background-color: var(--main-color)!important; }
 
-    .notification-settings-wrapper .form-item .option:hover {
-        background-color: var(--secondary)!important;
-    }
+    .notification-settings-wrapper .form-item .option:hover { background-color: var(--secondary)!important; }
 
-    .notification-settings-wrapper h3 {
-        color: var(--text-color)!important;
-    }
+    .notification-settings-wrapper h3 { color: var(--text-color)!important; }
 
-    ._1tpub._2awxe:hover {
-        background-color: var(--secondary)!important;
-    }
+    ._1tpub._2awxe:hover { background-color: var(--secondary)!important; }
 
-    ._1tpub._2awxe a:hover {
-        background: none!important;
-    }
+    ._1tpub._2awxe a:hover { background: none!important; }
 
-    .ui-selectmenu-menu a, .ui-selectmenu-status {
-        color: var(--text-color)!important;
-    }
+    .ui-selectmenu-menu a, .ui-selectmenu-status { color: var(--text-color)!important; }
 
-    #notif-filter-page-button {
-        padding: 2px;
-    }
+    #notif-filter-page-button { padding: 2px; }
 
-    #notif-filter-page-button:hover {
-        background-color: var(--secondary)!important; color: rgb(0, 0, 0, 0)!important;
-    }
+    #notif-filter-page-button:hover { background-color: var(--secondary)!important;
+        color: rgb(0, 0, 0, 0)!important; }
 
-    .item-list .edge-sentence, .item-list .notif-date-header {
-        color: var(--text-color)!important;
-    }
+    .item-list .edge-sentence, .item-list .notif-date-header { color: var(--text-color)!important; }
 
     /* DOCX viewer */
-    .course-materials-full {
-        background-color: var(--main-color)!important;
-    }
+    .course-materials-full { background-color: var(--main-color)!important; }
 
     /* Assignment Info */
-    .assignment-details, .info-container .info-text p {
-        color: var(--text-color)!important;
-    }
+    .assignment-details, .info-container .info-text p { color: var(--text-color)!important; }
 
     /* Submissions Tab */
-    .drop-items li:hover {
-        background-color: var(--secondary)!important
-    }
+    .drop-items li:hover { background-color: var(--secondary)!important }
 
-    .portfolio-add-submission-hint {
-        display: none;
-    }
+    .portfolio-add-submission-hint { display: none; }
 
     /* looked horrible ngl */
-    .grading-info {
-        padding-left: 0!important; background-color: var(--secondary)!important;
-    }
+    .grading-info { padding-left: 0!important;
+        background-color: var(--secondary)!important; }
 
-    .grading-info .grading-category, .grading-info .grading-period, .grading-info .param-name, .grading-grade span {
-        color: var(--text-color)!important;
-    }
+    .grading-info .grading-category, .grading-info .grading-period, .grading-info .param-name, .grading-grade span { color: var(--text-color)!important; }
 
     /* Comments */
-    #edit-comment.add-comment-resize, .form-item .form-textarea {
-        color: var(--text-color)!important;
-    }
+    #edit-comment.add-comment-resize, .form-item .form-textarea { color: var(--text-color)!important; }
 
     /* Groups */
-    #edge-filters {
-        background: none!important; background-color: var(--main-color)!important; border: 1px solid var(--border-color)!important;
-    }
-
-    #edge-filters-btn.clickable {
-        color: var(--text-color)!important;
-    }
-
-    #edge-filters #edge-filters-menu {
+    #edge-filters { background: none!important;
         background-color: var(--main-color)!important;
-    }
+        border: 1px solid var(--border-color)!important; }
+
+    #edge-filters-btn.clickable { color: var(--text-color)!important; }
+
+    #edge-filters #edge-filters-menu { background-color: var(--main-color)!important; }
 
     /* Resources page in groups */
-    #content-wrapper {
-        background-color: var(--main-color)!important;
-    }
+    #content-wrapper { background-color: var(--main-color)!important; }
 
-    #collection-view #collection-title, .collection-item-title, .collection-item-icon, .collection-item-checkbox {
-        background-color: var(--main-color)!important;
-    }
+    #collection-view #collection-title, .collection-item-title, .collection-item-icon, .collection-item-checkbox { background-color: var(--main-color)!important; }
 
-    #collection-view #collection-view-contents, #collection-view-contents .collection-template-item-row td {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
+    #collection-view #collection-view-contents, #collection-view-contents .collection-template-item-row td { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    .collection-item-title p, .collection-item-title .description {
-        color: var(--text-color)!important;
-    }
+    .collection-item-title p, .collection-item-title .description { color: var(--text-color)!important; }
 
-    .collection-item-title .attachment-url {
-        color: var(--link-text-color)!important;
-    }
+    .collection-item-title .attachment-url { color: var(--link-text-color)!important; }
 
-    .collection-item-title .description a {
-        background: none!important;
-    }
+    .collection-item-title .description a { background: none!important; }
 
-    .collection-row-empty td {
-        background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
+    .collection-row-empty td { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
 
     /* Resources */
-    #library-wrapper, #library-search-form-container div {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
+    #library-wrapper, #library-search-form-container div { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    #library-main {
-        border: 1px solid var(--border-color)!important;
-    }
+    #library-main { border: 1px solid var(--border-color)!important; }
 
-    #library-left, .library-collections, #collection-view-contents tr th, #collection-title {
-        border-color: var(--border-color)!important;
-    }
+    #library-left, .library-collections, #collection-view-contents tr th, #collection-title { border-color: var(--border-color)!important; }
 
-    #collection-view-contents .collection-item-checkbox input[disabled="disabled"] {
-        display: none!important;
-    }
+    #collection-view-contents .collection-item-checkbox input[disabled="disabled"] { display: none!important; }
 
-    #library-search-form-container div:before {
-        display: none!important;
-    }
+    #library-search-form-container div:before { display: none!important; }
 
-    #library-left-nav .library-collection a {
-        background-color: var(--main-color)!important; border-top: 1px solid var(--border-color)!important; color: var(--text-color)!important;
-    }
+    #library-left-nav .library-collection a { background-color: var(--main-color)!important;
+        border-top: 1px solid var(--border-color)!important;
+        color: var(--text-color)!important; }
 
-    #library-left-nav .library-collection a.active {
-        background-color: var(--secondary)!important;
-    }
+    #library-left-nav .library-collection a.active { background-color: var(--secondary)!important; }
 
-    #collection-toolbar .action-links-unfold {
-        background: none!important; background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
-
-    #collection-toolbar .action-links-unfold-text {
-        color: var(--text-color)!important;
-    }
-
-    .add-resource-app-wrapper .collection-title:hover {
+    #collection-toolbar .action-links-unfold { background: none!important;
         background-color: var(--main-color)!important;
-    }
+        border-color: var(--border-color)!important; }
 
-    .instructions, .directions, .install-agreement {
-        color: #f32020;
-    }
+    #collection-toolbar .action-links-unfold-text { color: var(--text-color)!important; }
+
+    .add-resource-app-wrapper .collection-title:hover { background-color: var(--main-color)!important; }
+
+    .instructions, .directions, .install-agreement { color: #f32020; }
 
     /* Linked Apps */
-    #schoology-app-container {
-        background-color: white!important;
-    }
+    #schoology-app-container { background-color: white!important; }
 
     /* Discussions */
-    #sticky-wrapper .page-title {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important; color: var(--text-color)!important;
-    }
-
-    #content-wrapper {
+    #sticky-wrapper .page-title { background-color: var(--main-color)!important;
         border-color: var(--border-color)!important;
-    }
+        color: var(--text-color)!important; }
 
-    #content-wrapper .extra-details {
-        border-color: var(--border-color)!important;
-    }
+    #content-wrapper { border-color: var(--border-color)!important; }
 
-    #content-wrapper .extra-details p {
-        color: var(--text-color)!important;
-    }
+    #content-wrapper .extra-details { border-color: var(--border-color)!important; }
 
-    #content-wrapper .discussion-prompt * {
-        color: var(--text-color)!important;
-    }
+    #content-wrapper .extra-details p { color: var(--text-color)!important; }
 
-    #content-wrapper .discussion-content {
-        border-color: var(--border-color)!important;
-    }
+    #content-wrapper .discussion-prompt * { color: var(--text-color)!important; }
 
-    #content-wrapper .s-comments-post-form {
-        background-color: var(--main-color)!important;
-    }
+    #content-wrapper .discussion-content { border-color: var(--border-color)!important; }
 
-    #content-wrapper .s-comments-post-form #comment-placeholder {
-        background-color: var(--main-color)!important;
-    }
+    #content-wrapper .s-comments-post-form { background-color: var(--main-color)!important; }
 
-    #content-wrapper .discussion-action-bar span:not(.user-stats-num):not(.user-unread-num) {
-        color: var(--text-color)!important;
-    }
+    #content-wrapper .s-comments-post-form #comment-placeholder { background-color: var(--main-color)!important; }
 
-    #content-wrapper .discussion-action-bar {
-        background-color: var(--secondary)!important; border-color: var(--border-color)!important;
-    }
+    #content-wrapper .discussion-action-bar span:not(.user-stats-num):not(.user-unread-num) { color: var(--text-color)!important; }
 
-    #content-wrapper .discussion-card {
-        background: none!important; box-shadow: none!important;
-    }
+    #content-wrapper .discussion-action-bar { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
 
-    #content-wrapper .comment {
-        background-color: var(--secondary)!important; border: 1px solid var(--border-color) !important; border-radius: 3px;
-    }
+    #content-wrapper .discussion-card { background: none!important;
+        box-shadow: none!important; }
 
-    #content-wrapper .comment:hover {
-        border-right: 5px solid var(--text-color)!important;
-    }
+    #content-wrapper .comment { background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 3px; }
 
-    #content-wrapper .comment .comment-body-wrapper *:not(.clickable):not(a) {
-        color: var(--text-color)!important;
-    }
+    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important; }
 
-    #content-wrapper .discussion-card .expander-bar {
-        background-color: var(--secondary)!important; border-color: var(--border-color)!important;
-    }
+    #content-wrapper .comment .comment-body-wrapper *:not(.clickable):not(a) { color: var(--text-color)!important; }
 
-    #content-wrapper .s_comments_level {
-        border: none!important; background: none!important;
-    }
+    #content-wrapper .discussion-card .expander-bar { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
+
+    #content-wrapper .s_comments_level { border: none!important;
+        background: none!important; }
 
     /* Assessments */
-    .s-assessment-question-fill-form .posted-time, #assessment-status * {
-        color: var(--text-color)!important;
-    }
+    .s-assessment-question-fill-form .posted-time, #assessment-status * { color: var(--text-color)!important; }
 
-    .assessment-status.enabled {
-        color: lime!important;
-    }
+    .assessment-status.enabled { color: lime!important; }
 
-    .assessment-status.disabled {
-        color: red!important;
-    }
+    .assessment-status.disabled { color: red!important; }
 
     /* Google Docs Linked Assignment Page */
-    .profile-container-4015500229 {
-        background-color: var(--main-color)!important;
-    }
+    .profile-container-4015500229 { background-color: var(--main-color)!important; }
 
-    .profile-header-2536997237 {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
+    .profile-header-2536997237 { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    .heading1-root-929924197 {
-        color: var(--text-color)!important;
-    }
+    .heading1-root-929924197 { color: var(--text-color)!important; }
 
-    .nav-tab-selected-3323184817 {
-        background-color: var(--secondary);
-    }
+    .nav-tab-selected-3323184817 { background-color: var(--secondary); }
 
-    .nav-tab-tab-325229968 {
-        background-color: var(--main-color)!important; border: 1px solid var(--border-color)!important;
-    }
+    .nav-tab-tab-325229968 { background-color: var(--main-color)!important;
+        border: 1px solid var(--border-color)!important; }
 
-    .nav-tab-tab-325229968:hover {
-        background-color: var(--border-color)!important;
-    }
+    .nav-tab-tab-325229968:hover { background-color: var(--border-color)!important; }
 
-    .content-box-container-3232021855 {
-        background-color: var(--main-color)!important;
-    }
+    .content-box-container-3232021855 { background-color: var(--main-color)!important; }
 
-    .typography-bodycopy-text-3028800701, .assignment-info-tab-description-2342305181 {
-        color: var(--text-color)!important;
-    }
+    .typography-bodycopy-text-3028800701, .assignment-info-tab-description-2342305181 { color: var(--text-color)!important; }
 
     /* ------------ Profile ------------ */
-    .profile-header, .schools-label {
-        color: var(--text-color)!important;
-    }
+    .profile-header, .schools-label { color: var(--text-color)!important; }
 
-    .edit-profile-picture-hover {
-        background: none!important;
-    }
+    .edit-profile-picture-hover { background: none!important; }
 
     /* Portfolio */
-    .portfolio-save-status span, .portfolio-breadcrumb span {
-        color: var(--text-color)!important;
-    }
+    .portfolio-save-status span, .portfolio-breadcrumb span { color: var(--text-color)!important; }
 
-    .portfolio-route-content, .portfolio-list__add-new, .portfolio-view, .portfolio-view__add-new, .item-form__title-bar, .item-file__preview-wrapper {
-        background-color: var(--main-color)!important;
-    }
+    .portfolio-route-content, .portfolio-list__add-new, .portfolio-view, .portfolio-view__add-new, .item-form__title-bar, .item-file__preview-wrapper { background-color: var(--main-color)!important; }
 
-    .portfolio-view .form-control, .item-view-container .form-control {
-        background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
+    .portfolio-view .form-control, .item-view-container .form-control { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
 
-    .portfolio-view .item-card {
-        background: none!important; box-shadow: none!important;
-    }
+    .portfolio-view .item-card { background: none!important;
+        box-shadow: none!important; }
 
-    .portfolio-view .item-card__bottom {
-        background-color: var(--main-color)!important;
-    }
+    .portfolio-view .item-card__bottom { background-color: var(--main-color)!important; }
 
-    .portfolio-view .item-card * {
-        color: var(--text-color)!important;
-    }
+    .portfolio-view .item-card * { color: var(--text-color)!important; }
 
     /* ------------ Messages ------------ */
-    #center-top {
-        background: none!important; background-color: var(--main-color)!important;
-    }
+    #center-top { background: none!important;
+        background-color: var(--main-color)!important; }
 
-    #tabs-wrapper .tabs.primary {
-        background-color: var(--main-color)!important; padding-left: 0!important;
-    }
+    #tabs-wrapper .tabs.primary { background-color: var(--main-color)!important;
+        padding-left: 0!important; }
 
-    #tabs-wrapper .tabs.primary .link-wrapper a {
-        background: none!important; background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
-
-    #tabs-wrapper .tabs.primary .active a {
-        background-color: var(--secondary)!important; border-color: var(--border-color)!important;
-    }
-
-    .sticky-table td, .thread-wrapper fieldset {
+    #tabs-wrapper .tabs.primary .link-wrapper a { background: none!important;
         background-color: var(--main-color)!important;
-    }
+        border-color: var(--border-color)!important; }
 
-    #privatemsg-new fieldset, #privatemsg-new fieldset .userlist {
-        background-color: var(--main-color)!important;
-    }
+    #tabs-wrapper .tabs.primary .active a { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
 
-    #privatemsg-new fieldset label {
-        color: var(--text-color)!important;
-    }
+    .sticky-table td, .thread-wrapper fieldset { background-color: var(--main-color)!important; }
 
-    #privatemsg-new fieldset .recipient-helper {
-        background-color: var(--main-color)!important; color: var(--text-color)!important;
-    }
+    #privatemsg-new fieldset, #privatemsg-new fieldset .userlist { background-color: var(--main-color)!important; }
+
+    #privatemsg-new fieldset label { color: var(--text-color)!important; }
+
+    #privatemsg-new fieldset .recipient-helper { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
 
     /* ------------ Calendar Settings and other misc pages -------------- */
-    .popups-body {
-        background-color: var(--main-color);
-    }
+    .popups-body { background-color: var(--main-color); }
 
-    .fc-today {
-        background-color: var(--border-color)!important;
-    }
+    .fc-today { background-color: var(--border-color)!important; }
 
-    .fc-today .fc-day-number {
-        color: var(--text-color)!important;
-    }
+    .fc-today .fc-day-number { color: var(--text-color)!important; }
 
-    .fc-button {
-        background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif"); border-color: var(--border-color)!important;
-    }
+    .fc-button { background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color)!important; }
 
-    .fc-event .infotip, .fc-event-time {
-        color: var(--main-color)!important;
-    }
+    .fc-event .infotip, .fc-event-time { color: var(--main-color)!important; }
 
-    .fc-event-time:before {
-        content: " @ ";
-    }
+    .fc-event-time:before { content: " @ "; }
 
-    .fc-view tbody td {
-        border-color: var(--border-color);
-    }
+    .fc-view tbody td { border-color: var(--border-color); }
 
-    .fc-view tbody td:hover {
-        background-color: #232323;
-    }
+    .fc-view tbody td:hover { background-color: #232323; }
 
-    .fcalendar-filter-menu-header {
-        color: var(--link-text-color)!important;
-    }
+    .fcalendar-filter-menu-header { color: var(--link-text-color)!important; }
 
-    .calendar-form-container input.form-text {
-        background-color: var(--main-color)!important;
-    }
+    .calendar-form-container input.form-text { background-color: var(--main-color)!important; }
 
-    #ui-datepicker-div, #ui-datepicker-div * {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
+    #ui-datepicker-div, #ui-datepicker-div * { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    #ui-datepicker-div a:hover, #ui-datepicker-div td:hover {
-        background-color: var(--secondary)!important;
-    }
+    #ui-datepicker-div a:hover, #ui-datepicker-div td:hover { background-color: var(--secondary)!important; }
 
-    #smart-box-realm-selection-wrapper .name-wrapper {
-        background-color: var(--secondary)!important;
-    }
+    #smart-box-realm-selection-wrapper .name-wrapper { background-color: var(--secondary)!important; }
 
-    .fc-button-content, .fc-button-content span, #ui-datepicker-div *, #smart-box-realm-selection-wrapper .name-wrapper .name-text {
-        color: var(--text-color)!important;
-    }
+    .fc-button-content, .fc-button-content span, #ui-datepicker-div *, #smart-box-realm-selection-wrapper .name-wrapper .name-text { color: var(--text-color)!important; }
 
-    #browse-realm-button:hover {
-        background-position: 50% -614px!important;
-    }
+    #browse-realm-button:hover { background-position: 50% -614px!important; }
 
-    .popups-body {
-        background-color: var(--main-color)!important;
-    }
+    .popups-body { background-color: var(--main-color)!important; }
 
-    .popups-body .browse-realm-checkbox {
-        background-color: var(--main-color)!important; border: none!important;
-    }
+    .popups-body .browse-realm-checkbox { background-color: var(--main-color)!important;
+        border: none!important; }
 
-    .browser-realm-checkboxes {
-        background: none!important; border: 1px solid var(--border-color)!important;
-    }
+    .browser-realm-checkboxes { background: none!important;
+        border: 1px solid var(--border-color)!important; }
 
-    .fcalendar-filter-menu-wrapper .menuopt-wrapper {
-        background-color: var(--main-color)!important; border-color: var(--border-color)!important;
-    }
+    .fcalendar-filter-menu-wrapper .menuopt-wrapper { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
 
-    .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected {
-        background-color: var(--text-color)!important;
-    }
+    .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
 }
