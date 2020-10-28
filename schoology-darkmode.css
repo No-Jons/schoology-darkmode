@@ -76,6 +76,9 @@
         border-radius: 4px; }
 
     .comment-body-wrapper { color: var(--text-color); }
+    
+    .loading-overlay { background-color: var(--main-color)!important; 
+        opacity: 1!important; }
 
     /* -------- Styles for right-hand column --------- */
     #right-column-inner { background-color: transparent!important; }
@@ -148,7 +151,7 @@
 
     .course-title a, .school-name a, #center-inner h2, .course-grade-text, #event-upcoming { color: var(--text-color)!important; }
 
-    li.active-trail .link-wrapper a { background-color: var(--main-color)!important;
+    .link-wrapper a { background-color: var(--main-color)!important;
         color: var(--text-color)!important;
         margin: 0!important;
         border: 5px var(--border-color)!important; }
@@ -185,21 +188,17 @@
         border-color: var(--border-color); }
 
     /* Global Buttons */
-    .submit-buttons, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
+    .submit-buttons, .submit-btn, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
 
-    .form-submit:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover { background-color: var(--secondary)!important; }
+    .form-submit:hover, .submit-btn:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover { background-color: var(--secondary)!important; }
 
     .submit-span-wrapper { border-color: var(--text-color)!important; }
 
-    .cancel-btn, #edit-cancel, #popup_cancel { background: none!important;
+    .submit-btn, .cancel-btn, #edit-cancel, #popup_cancel, #popup_submit, #popup_close { background: none!important;
         background-color: var(--main-color)!important;
         color: var(--text-color)!important; }
 
-    #popup_submit, #popup_close { background: none!important;
-        background-color: var(--main-color)!important;
-        color: var(--text-color)!important; }
-
-    .popups-buttons-inner span { border-color: var(--border-color)!important; }
+    .popups-buttons-inner span, .submit-btn { border-color: var(--border-color)!important; }
 
     .popups-processed, .action-links .clickable { color: var(--text-color)!important; }
 
@@ -214,6 +213,8 @@
         border: inherit!important;
         padding: 1px!important; }
 
+    .action-links-unfold-text { color: var(--text-color)!important; }
+    
     .action-links-unfold.active, .action-links-unfold:active { background-color: var(--main-color)!important; }
 
     .action-links .clickable:hover { background-color: var(--secondary)!important; }
@@ -223,6 +224,10 @@
     .action-rename a { background-position-y: -37px!important; }
 
     .action-rename a:hover { background-position: 9px -55px!important; }
+    
+    .action-links-unfold { display:block; 
+        color: var(--text-color)!important; 
+        outline: none!important; }
 
     /* Course updates */
     .update-body p span { color: var(--text-color)!important; }
@@ -236,9 +241,7 @@
 
     .notification-settings-wrapper h3 { color: var(--text-color)!important; }
 
-    ._1tpub._2awxe:hover { background-color: var(--secondary)!important; }
-
-    ._1tpub._2awxe a:hover { background: none!important; }
+    ._1tpub._2awxe:hover, ._1tpub._2awxe:hover > *, ._1tpub._2awxe:hover > span { background-color: var(--secondary)!important; }
 
     .ui-selectmenu-menu a, .ui-selectmenu-status { color: var(--text-color)!important; }
 
@@ -259,8 +262,8 @@
     .drop-items li:hover { background-color: var(--secondary)!important }
 
     .portfolio-add-submission-hint { display: none; }
-
     /* looked horrible ngl */
+    
     .grading-info { padding-left: 0!important;
         background-color: var(--secondary)!important; }
 
@@ -373,6 +376,10 @@
     .assessment-status.enabled { color: lime!important; }
 
     .assessment-status.disabled { color: red!important; }
+    
+    /* Announcements */
+    
+    #important-post-body p, #important-post-body p span { color: var(--text-color)!important; }
 
     /* Google Docs Linked Assignment Page */
     .profile-container-4015500229 { background-color: var(--main-color)!important; }
@@ -457,6 +464,8 @@
     .fcalendar-filter-menu-header { color: var(--link-text-color)!important; }
 
     .calendar-form-container input.form-text { background-color: var(--main-color)!important; }
+    
+    .info-tab p span { color: var(--text-color)!important; }
 
     #ui-datepicker-div, #ui-datepicker-div * { background-color: var(--main-color)!important;
         border-color: var(--border-color)!important; }
@@ -481,4 +490,8 @@
         border-color: var(--border-color)!important; }
 
     .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
+    
+    /* Random Popup Fix */
+    
+    #course-completion-user-switcher-wrapper .form-item { background-color: var(--main-color)!important }
 }
