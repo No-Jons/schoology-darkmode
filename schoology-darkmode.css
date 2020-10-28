@@ -104,12 +104,23 @@
     h3, h4 { border-color: var(--border-color)!important; }
 
     /* ------- Style for dropdown menus --------- */
-    /* TODO: Is there a better option than random strings?? */
+    ._2JX1Q:not(._1k0yk) { display: none; } /* To use a custom header image: */
+                               /* replace the `display: none;` tag */
+                               /* with `background-image: url(<URL TO YOUR IMAGE>);` */
+    
+    #header header { background: url("https://i.stack.imgur.com/Iuyjf.jpg") repeat; }
+    
+    nav._1tpub li._24avl._3Rh90 button, nav._1tpub li._24avl a:not(._2JX1Q) { background: none!important; }
+    
+    nav._1tpub li._24avl._3Rh90:hover a { color: var(--text-color); }
+    
     ._1Z0RM { background-color: var(--main-color); }
 
     ._2UdSL { border-color: var(--border-color); }
 
     ._2qcpH { color: var(--text-color); }
+    
+    ._3RmDr { border: none; }
 
     ._2T2dA { background: none!important; }
 
@@ -347,6 +358,11 @@
     #schoology-app-container { background-color: white!important; }
 
     /* Discussions */
+    
+    .warning { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important;
+        color: #f32020; }
+    
     #sticky-wrapper .page-title { background-color: var(--main-color)!important;
         border-color: var(--border-color)!important;
         color: var(--text-color)!important; }
@@ -375,9 +391,11 @@
 
     #content-wrapper .comment { background-color: var(--secondary)!important;
         border: 1px solid var(--border-color) !important;
-        border-radius: 3px; }
+        border-radius: 3px;
+        padding-right: 5px!important; }
 
-    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important; }
+    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important;
+        padding-right: 0!important; }
 
     #content-wrapper .comment .comment-body-wrapper *:not(.clickable):not(a) { color: var(--text-color)!important; }
 
@@ -405,6 +423,10 @@
         border-color: var(--border-color)!important; }
 
     .heading1-root-929924197 { color: var(--text-color)!important; }
+    
+    .nav-breadcrumb-container-1732584003 { background-color: var(--main-color)!important; }
+    
+    .nav-breadcrumb-subContainer-4084051826:before { display: none; }
 
     .nav-tab-selected-3323184817 { background-color: var(--secondary); }
 
@@ -416,6 +438,16 @@
     .content-box-container-3232021855 { background-color: var(--main-color)!important; }
 
     .typography-bodycopy-text-3028800701, .assignment-info-tab-description-2342305181 { color: var(--text-color)!important; }
+    
+    .document-header-module-header-3529942618 { background: none!important;
+        background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color); }
+    
+    .typography-button-primary-dark-button-3878422715, .typography-button-secondary-dark-button-2438965213, .typography-button-primary-dark-button-3878422715:hover, .typography-button-secondary-dark-button-2438965213:hover { border: 1px solid var(--border-color); }
+    
+    .typography-button-primary-dark-button-3878422715 span, .typography-button-secondary-dark-button-2438965213 span { color: var(--text-color); }
+    
+    .typography-button-primary-dark-button-3878422715, .typography-button-secondary-dark-button-2438965213 { background-color: var(--main-color); }
 
     /* ------------ Profile ------------ */
     .profile-header, .schools-label { color: var(--text-color)!important; }
@@ -508,6 +540,21 @@
 
     .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
     
+    /* Error Page */
+    
+    #error-page {background-color: var(--main-color)!important;
+        border: none!important; }
+    
+    #error-page ul li a[href="/home"] { position: absolute;
+        border: 1px solid var(--border-color);
+        padding: 10px 15px;
+        color: var(--text-color)!important;
+        left: 45%; }
+    
+    #error-page ul li a[href="/home"]:hover { background-color: var(--secondary);
+        color: lime!important;
+        text-decoration: none; }
+    
     /* Random Debugging Stuff */
     
     #course-completion-user-switcher-wrapper .form-item { background-color: var(--main-color)!important }
@@ -515,4 +562,9 @@
     #content-wrapper .gradebook-course .comment { background: none!important;
         border: none!important;
         color: var(--text-color); }
+    
+    #content-wrapper .feed-comments .comment { padding: 15px!important; }
+    #content-wrapper .feed-comments .comment:hover { padding-right: 10px!important; }
+    #content-wrapper .discussion-attachments { border-top: none; }
+    #content-wrapper .discussion-author { border-bottom: 1px solid var(--border-color); }
 }
