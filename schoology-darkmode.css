@@ -104,11 +104,21 @@
     h3, h4 { border-color: var(--border-color)!important; }
 
     /* ------- Style for dropdown menus --------- */
-    ._2JX1Q:not(._1k0yk) { display: none; } /* To use a custom header image: */
-                               /* replace the `display: none;` tag */
-                               /* with `background-image: url(<URL TO YOUR IMAGE>);` */
+    ._2JX1Q:not(._1k0yk) { color: var(--text-color)!important;
+        background: none!important;
+        margin-top: 12px;
+        margin-bottom: -12px;
+        padding-left: 20px; 
+        width: 75px; } /* To use a custom header image: */
+                                                         /* edit the background tag to read*/
+                                                         /* `background: url(<URL TO YOUR IMAGE>);` */
     
-    #header header { background: url("https://i.stack.imgur.com/Iuyjf.jpg") repeat; }
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):before { content: "Home";
+        font-size: 25px; }
+    
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):hover { text-decoration: none!important;  }
+    
+    #header header { background: url("https://i.stack.imgur.com/Iuyjf.jpg") repeat; } /* Github link unavailable for now, using imgur link instead */
     
     nav._1tpub li._24avl._3Rh90 button, nav._1tpub li._24avl a:not(._2JX1Q) { background: none!important; }
     
@@ -356,6 +366,16 @@
 
     /* Linked Apps */
     #schoology-app-container { background-color: white!important; }
+    
+    /* Join Courses Page */
+    
+    #secondary-tabs-wrapper .link-wrapper a[href^="/courses"] { background: none; 
+        border: 1px solid var(--border-color)!important;
+        border-bottom: none!important; 
+        padding-bottom: 12px; }
+    
+    #secondary-tabs-wrapper .active .link-wrapper a[href^="/courses"] { background: var(--secondary)!important;
+        top: -5px!important; }
 
     /* Discussions */
     
