@@ -18,6 +18,14 @@
         --border-color: #494949; }
 
     /* ---------- Universal page styling ------------ */
+    
+    /* Global Styling */
+    
+    :focus { outline: none!important; }
+    
+    select { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+    
     /*outer edge background color*/
     #body { background-color: #121212!important; }
 
@@ -39,7 +47,7 @@
     .sExtlink-processed { color: var(--link-text-color)!important; }
 
     /*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
-    ._pendo-launcher-badge_ { visibility: hidden; }
+    ._pendo-launcher-badge_ { display: none;}
 
     /* ---------- Login page syling ------------------ */
     .login-page, #supplementary, #page-footer { background-color: #121212; }
@@ -257,6 +265,15 @@
 
     /* Assignment Info */
     .assignment-details, .info-container .info-text p { color: var(--text-color)!important; }
+    
+    .info-body p, .info-body p span { color: var(--text-color)!important; }
+    
+    .term-item-tag { background-color: var(--main-color);
+        border: 1px solid var(--border-color);
+        color: var(--text-color); }
+    
+    .term-item-tag:hover { background-color: var(--secondary);
+        color: var(--text-color)!important; }
 
     /* Submissions Tab */
     .drop-items li:hover { background-color: var(--secondary)!important }
@@ -491,7 +508,11 @@
 
     .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
     
-    /* Random Popup Fix */
+    /* Random Debugging Stuff */
     
     #course-completion-user-switcher-wrapper .form-item { background-color: var(--main-color)!important }
+    
+    #content-wrapper .gradebook-course .comment { background: none!important;
+        border: none!important;
+        color: var(--text-color); }
 }
