@@ -582,6 +582,12 @@
 
     .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
     
+    /* Lightbox or Image Viewer */
+    
+    #lightbox .lb-outerContainer, #lightbox .lb-dataContainer { background-color: var(--main-color); }
+    
+    #lightbox .lb-dataContainer .lb-number { color: var(--text-color); }
+    
     /* Error Page */
     
     #error-page {background-color: var(--main-color)!important;
@@ -622,7 +628,7 @@
     .cellphone-container { background-color: var(--main-color);
         border: 1px solid var(--border-color); }
     
-    .cellphone-container ul li.device { border: 1px solid var(--border-color); 
+    .cellphone-container ul li.device { border: 1px solid var(--border-color);
         margin-top: 10px;
         padding: 3px!important;
         padding-right: 0!important; }
@@ -641,4 +647,6 @@
     #content-wrapper .feed-comments .comment:hover { padding-right: 10px!important; }
     #content-wrapper .discussion-attachments { border-top: none; }
     #content-wrapper .discussion-author { border-bottom: 1px solid var(--border-color); }
+    
+    .util-hover-background-color-cloud-grey-wHghL:hover { background-color: var(--secondary)!important; }
 }
