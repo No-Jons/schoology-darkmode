@@ -104,31 +104,31 @@
     h3, h4 { border-color: var(--border-color)!important; }
 
     /* ------- Style for dropdown menus --------- */
-    ._2JX1Q:not(._1k0yk) { color: var(--text-color)!important;
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp) { color: var(--text-color)!important;
         background: none!important;
         margin-top: 12px;
         margin-bottom: -12px;
         padding-left: 20px; 
         width: 75px; } /* To use a custom header image: */
-                                                         /* edit the background tag to read*/
-                                                         /* `background: url(<URL TO YOUR IMAGE>);` */
+                       /* edit the background tag to read*/
+                       /* `background: url("<URL TO YOUR IMAGE>");` */
     
-    ._2JX1Q:not(._1k0yk):not(._2L4PN):before { content: "Home";
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):before { content: "Home";
         font-size: 25px; }
     
-    ._2JX1Q:not(._1k0yk):not(._2L4PN):hover { text-decoration: none!important;  }
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):hover { text-decoration: none!important;  }
     
     #header header { background: url("https://i.stack.imgur.com/Iuyjf.jpg") repeat; } /* Github link unavailable for now, using imgur link instead */
     
-    nav._1tpub li._24avl._3Rh90 button, nav._1tpub li._24avl a:not(._2JX1Q) { background: none!important; }
+    ._1tpub li._24avl._3Rh90 button, nav._1tpub li._24avl a:not(._2JX1Q) { background: none; }
     
-    nav._1tpub li._24avl._3Rh90:hover a { color: var(--text-color); }
+    ._1tpub li._24avl._3Rh90:not(._349XD):hover a { color: var(--text-color); }
     
     ._1Z0RM { background-color: var(--main-color); }
 
     ._2UdSL { border-color: var(--border-color); }
 
-    ._2qcpH { color: var(--text-color); }
+    ._2qcpH:not(._1wP6w) { color: var(--text-color); }
     
     ._3RmDr { border: none; }
 
@@ -143,6 +143,10 @@
 
     ._1Z0RM li a, ._1Z0RM li a span { background-color: var(--main-color)!important;
         color: var(--text-color)!important; }
+    
+    ._2awxe ._32ur3 ._2qcpH span { color: var(--text-color); }
+    
+    ._2awxe ._32ur3 ._2qcpH a, ._2awxe ._32ur3 ._2qcpH a:hover { color: var(--link-text-color); }
 
     ._1Z0RM li a:hover, ._1Z0RM li a:hover > span { background-color: var(--secondary)!important; }
     
@@ -284,14 +288,18 @@
 
     .update-body p a span { color: var(--link-text-color)!important; }
 
-    /* Notifications, Notifcation Settings Dropdown */
+    /* Notifications, Notifcation Settings Dropdown, Messages Dropdown */
     .notif-setting-dropdown { background-color: var(--main-color)!important; }
 
     .notification-settings-wrapper .form-item .option:hover { background-color: var(--secondary)!important; }
 
     .notification-settings-wrapper h3 { color: var(--text-color)!important; }
 
-    ._1tpub._2awxe:hover, ._1tpub._2awxe:hover > *, ._1tpub._2awxe:hover > span { background-color: var(--secondary)!important; }
+    ._1tpub._2awxe:hover *:not(button):not(._2K08O) { background-color: var(--secondary)!important; }
+    
+    ._1tpub._2awxe:not(._3skcp):hover a { color: var(--link-color)!important; }
+    
+    ._1tpub._2awxe ._2s0LQ, ._1tpub._2awxe .ii1R0._3H0oJ { color: var(--text-color); }
 
     .ui-selectmenu-menu a, .ui-selectmenu-status { color: var(--text-color)!important; }
 
@@ -516,6 +524,8 @@
 
     #tabs-wrapper .tabs.primary { background-color: var(--main-color)!important;
         padding-left: 0!important; }
+    
+    #tabs-wrapper .tabs.primary .link-wrapper a[href="/messages"] { padding-bottom: 7px!important; }
 
     #tabs-wrapper .tabs.primary .link-wrapper a { background: none!important;
         background-color: var(--main-color)!important;
