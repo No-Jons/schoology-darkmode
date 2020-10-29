@@ -1,0 +1,652 @@
+/* ==UserStyle==
+@name         Schoology Dark Theme
+@namespace    github.com/PseudonymPatel/schoology-darkmode
+@version      0.2.0
+@license      GPL-3.0
+@preprocessor default
+
+==/UserStyle== */
+
+@-moz-document domain("<YOUR DOMAIN HERE>") {
+    /* ---------- Color variables!! ----------------- */
+    :root { --main-color: #1E1E1E;
+        --secondary: #383838;
+        --shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
+        --link-text-color: #75afe0e3;
+        --nav-color: #e0e0e0;
+        --text-color: #e0e0e0;
+        --border-color: #494949; }
+
+    /* ---------- Universal page styling ------------ */
+    
+    /* Global Styling */
+    
+    :focus { outline: none!important; }
+    
+    select { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+    
+    /*outer edge background color*/
+    #body { background-color: #121212!important; }
+
+    #main-content-wrapper { background-color: var(--main-color);
+        box-shadow: var(--shadow)!important;
+        border-width: 0px!important; }
+
+    .theme-2016-layout #main-content-wrapper { padding-right: 20px; }
+
+    #right-column { margin-right: 0px; }
+
+    /* Navigation bar text styling*/
+    button, ._1tpub .sExtlink-processed { color: var(--nav-color)!important; }
+
+    /*makes majority of background transparent too*/
+    .s-enable-course-dashboard.theme-2016-layout #main { background: transparent!important; }
+
+    /* sExtlink-processed are links that lead to other pages */
+    .sExtlink-processed { color: var(--link-text-color)!important; }
+
+    /*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
+    ._pendo-launcher-badge_ { display: none;}
+
+    /* ---------- Login page syling ------------------ */
+    .login-page, #supplementary, #page-footer { background-color: #121212; }
+
+    .login-content { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important;
+        border-radius: 0px!important; }
+
+    .h3, .school-name { color: var(--text-color) }
+
+    .form-text, input[type=text] { background-color: var(--main-color);
+        color: var(--text-color)!important; }
+
+    .form-text, input[type=text]:focus { border-radius: 4px; }
+
+    /* ---------- Styles for the main feed ----------- */
+    #home-feed-container { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important; }
+
+    .update-body { color: var(--text-color)!important; }
+
+    /*This has to do with the dividing lines.*/
+    li, #smart-box, .s-like-sentence, .comment { border-color: var(--border-color)!important; }
+
+    /*These next 4 have to do with the comment box*/
+    .s-like-sentence { color: var(--text-color); }
+
+    .feed-comments { background-color: #232323!important;
+        box-shadow: var(--shadow)!important; }
+
+    .form-textarea { background-color: transparent!important;
+        border: 1px dashed #b7a7a7;
+        /* TODO: Potentially change color? */
+        border-radius: 4px; }
+
+    .comment-body-wrapper { color: var(--text-color); }
+    
+    .loading-overlay { background-color: var(--main-color)!important; 
+        opacity: 1!important; }
+
+    /* -------- Styles for right-hand column --------- */
+    #right-column-inner { background-color: transparent!important; }
+
+    .overdue-submissions, .upcoming-events { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important; }
+
+    h3 { /* Words "overdue" and "Upcoming" */
+        color: #cab6b6!important; }
+
+    h4 { /* Dates */
+        color: #bdb5b5!important; }
+
+    /*Border color fix for rh column*/
+    h3, h4 { border-color: var(--border-color)!important; }
+
+    /* ------- Style for dropdown menus --------- */
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp) { color: var(--text-color)!important;
+        background: none!important;
+        margin-top: 12px;
+        margin-bottom: -12px;
+        padding-left: 20px; 
+        width: 75px; } /* To use a custom header image: */
+                       /* edit the background tag to read*/
+                       /* `background: url("<URL TO YOUR IMAGE>");` */
+    
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):before { content: "Home";
+        font-size: 25px; }
+    
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):hover { text-decoration: none!important;  }
+    
+    #header header { background: url("https://i.stack.imgur.com/Iuyjf.jpg") repeat; } /* Github link unavailable for now, using imgur link instead */
+    
+    ._1tpub li._24avl._3Rh90 button, nav._1tpub li._24avl a:not(._2JX1Q) { background: none; }
+    
+    ._1tpub li._24avl._3Rh90:not(._349XD):hover a { color: var(--text-color); }
+    
+    ._1Z0RM { background-color: var(--main-color); }
+
+    ._2UdSL { border-color: var(--border-color); }
+
+    ._2qcpH:not(._1wP6w) { color: var(--text-color); }
+    
+    ._3RmDr { border: none; }
+
+    ._2T2dA { background: none!important; }
+
+    ._2T2dA a { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+
+    ._2T2dA a:hover { background-color: var(--secondary)!important; }
+
+    ._2qcpH { background-color: var(--main-color)!important; }
+
+    ._1Z0RM li a, ._1Z0RM li a span { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+    
+    ._2awxe ._32ur3 ._2qcpH span { color: var(--text-color); }
+    
+    ._2awxe ._32ur3 ._2qcpH a, ._2awxe ._32ur3 ._2qcpH a:hover { color: var(--link-text-color); }
+
+    ._1Z0RM li a:hover, ._1Z0RM li a:hover > span { background-color: var(--secondary)!important; }
+    
+    ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { background-color: white;
+        border-radius: 10px;
+        color: var(--main-color);
+        width: auto;
+        padding: 0 7px; }
+
+    ._9e7c_ { background-color: var(--shadow)!important; }
+
+    /* Homepage Cards */
+    article { box-shadow: var(--shadow)!important; }
+
+    .sgy-card { background-color: var(--main-color)!important;
+        border: 1px solid var(--border-color); }
+
+    .sgy-card .sgy-card-lens { background-color: var(--main-color); 
+        border-bottom: 1px solid var(--border-color); }
+    
+    .sgy-card .sgy-multiline-ellipsis__split-part { color: var(--text-color)!important; }
+
+    #attachment-selector { background-color: var(--main-color)!important; }
+
+    /* -------- Styles for each course ------------ */
+    /* Selected left menu item*/
+    #sidebar-left .active-trail-dist-1 a { background-color: var(--main-color)!important;
+        border-width: 0px!important; }
+
+    /*Change the white line borders. */
+    #folder-contents-table .folder-contents-cell, .materials-top, #center-top, .gradebook-course.hierarchical-grading-report .td-content-wrapper, #s-update-create-form, .roster-top, .enrollment-actions, .user-picture, .user-name { border-color: var(--border-color)!important; }
+
+    #center-top { background-color: var(--main-color)!important }
+
+    .materials-filter-wrapper, .action-links { background-color: var(--main-color); }
+
+    .ui-widget { background-color: var(--main-color);
+        box-shadow: var(--shadow)!important; }
+
+    .notification-settings-wrapper, #taught-courses-switcher { background-color: black!important; }
+
+    .summary-course { background-color: var(--main-color)!important;
+        box-shadow: var(--shadow)!important;
+        border-color: transparent!important; }
+
+    .course-title a, .school-name a, #center-inner h2, .course-grade-text, #event-upcoming { color: var(--text-color)!important; }
+
+    .link-wrapper a { background-color: var(--main-color)!important;
+        color: var(--text-color)!important;
+        margin: 0!important;
+        border: 5px var(--border-color)!important; }
+
+    .app-link .app-title { color: var(--text-color)!important; }
+
+    li.active-trail .link-wrapper a.active, li.active-trail .link-wrapper a:hover, .app-link.active .app-title, .app-link:hover .app-title { color: var(--link-text-color)!important; }
+
+    .app-link { background-color: var(--main-color)!important;
+        margin: 0!important; }
+
+    .app-launch-message, .link-btn.s-js-launch-button { color: var(--text-color)!important; }
+
+    .materials-dropdown-arrow:hover > .materials-dropdown-arrow span { background-color: var(--main-color)!important;
+        color: white!important; }
+
+    .course-materials-folders { padding: 0!important;
+        border: 3px var(--main-color)!important; }
+
+    .course-materials-folders .item-list ul { background-color: var(--main-color)!important; }
+
+    .td-content-wrapper .title { color: var(--text-color)!important; }
+
+    .has-children .title { color: var(--link-text-color)!important; }
+
+    #sidebar-left { color: var(--text-color)!important; }
+
+    .roster-top, .right, .enrollment-view-wrapper { background-color: transparent; }
+
+    #center-top .content-top-upper { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .link-btn, a.ui-selectmenu { background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color); }
+
+    /* Global Buttons */
+    .submit-buttons, .submit-btn, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
+
+    .form-submit:hover, .submit-btn:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover { background-color: var(--secondary)!important; }
+
+    .submit-span-wrapper { border-color: var(--text-color)!important; }
+
+    .submit-btn, .cancel-btn, #edit-cancel, #popup_cancel, #popup_submit, #popup_close { background: none!important;
+        background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+
+    .popups-buttons-inner span, .submit-btn { border-color: var(--border-color)!important; }
+
+    .popups-processed, .action-links .clickable { color: var(--text-color)!important; }
+
+    .action-links-unfold .action-links-unfold-text.use-inline-image .action-links-unfold-icon { clip: rect(600px, 50px, 610px, 0px)!important;
+        top: -592px!important; }
+
+    .action-links-unfold { background: none!important;
+        background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .action-links-wrapper-junior .action-links-unfold:hover { background: none!important;
+        border: inherit!important;
+        padding: 1px!important; }
+
+    .action-links-unfold-text { color: var(--text-color)!important; }
+    
+    .action-links-unfold.active, .action-links-unfold:active { background-color: var(--main-color)!important; }
+
+    .action-links .clickable:hover { background-color: var(--secondary)!important; }
+
+    .action-links { padding: 0px!important; }
+
+    .action-rename a { background-position-y: -37px!important; }
+
+    .action-rename a:hover { background-position: 9px -55px!important; }
+    
+    .action-links-unfold { display:block; 
+        color: var(--text-color)!important; 
+        outline: none!important; }
+
+    /* Course updates */
+    .update-body p span { color: var(--text-color)!important; }
+
+    .update-body p a span { color: var(--link-text-color)!important; }
+
+    /* Notifications, Notifcation Settings Dropdown, Messages Dropdown */
+    .notif-setting-dropdown { background-color: var(--main-color)!important; }
+
+    .notification-settings-wrapper .form-item .option:hover { background-color: var(--secondary)!important; }
+
+    .notification-settings-wrapper h3 { color: var(--text-color)!important; }
+
+    ._1tpub._2awxe:hover *:not(button):not(._2K08O) { background-color: var(--secondary)!important; }
+    
+    ._1tpub._2awxe:not(._3skcp):hover a { color: var(--link-color)!important; }
+    
+    ._1tpub._2awxe ._2s0LQ, ._1tpub._2awxe .ii1R0._3H0oJ { color: var(--text-color); }
+
+    .ui-selectmenu-menu a, .ui-selectmenu-status { color: var(--text-color)!important; }
+
+    #notif-filter-page-button { padding: 2px; }
+
+    #notif-filter-page-button:hover { background-color: var(--secondary)!important;
+        color: rgb(0, 0, 0, 0)!important; }
+
+    .item-list .edge-sentence, .item-list .notif-date-header { color: var(--text-color)!important; }
+
+    /* DOCX viewer */
+    .course-materials-full { background-color: var(--main-color)!important; }
+
+    /* Assignment Info */
+    .assignment-details, .info-container .info-text p { color: var(--text-color)!important; }
+    
+    .info-body p, .info-body p span { color: var(--text-color)!important; }
+    
+    .term-item-tag { background-color: var(--main-color);
+        border: 1px solid var(--border-color);
+        color: var(--text-color); }
+    
+    .term-item-tag:hover { background-color: var(--secondary);
+        color: var(--text-color)!important; }
+
+    /* Submissions Tab */
+    .drop-items li:hover { background-color: var(--secondary)!important }
+
+    .portfolio-add-submission-hint { display: none; }
+    /* looked horrible ngl */
+    
+    .grading-info { padding-left: 0!important;
+        background-color: var(--secondary)!important; }
+
+    .grading-info .grading-category, .grading-info .grading-period, .grading-info .param-name, .grading-grade span { color: var(--text-color)!important; }
+
+    /* Comments */
+    #edit-comment.add-comment-resize, .form-item .form-textarea { color: var(--text-color)!important; }
+
+    /* Groups */
+    #edge-filters { background: none!important;
+        background-color: var(--main-color)!important;
+        border: 1px solid var(--border-color)!important; }
+
+    #edge-filters-btn.clickable { color: var(--text-color)!important; }
+
+    #edge-filters #edge-filters-menu { background-color: var(--main-color)!important; }
+
+    /* Resources page in groups */
+    #content-wrapper { background-color: var(--main-color)!important; }
+
+    #collection-view #collection-title, .collection-item-title, .collection-item-icon, .collection-item-checkbox { background-color: var(--main-color)!important; }
+
+    #collection-view #collection-view-contents, #collection-view-contents .collection-template-item-row td { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .collection-item-title p, .collection-item-title .description { color: var(--text-color)!important; }
+
+    .collection-item-title .attachment-url { color: var(--link-text-color)!important; }
+
+    .collection-item-title .description a { background: none!important; }
+
+    .collection-row-empty td { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+
+    /* Resources */
+    #library-wrapper, #library-search-form-container div { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    #library-main { border: 1px solid var(--border-color)!important; }
+
+    #library-left, .library-collections, #collection-view-contents tr th, #collection-title { border-color: var(--border-color)!important; }
+
+    #collection-view-contents .collection-item-checkbox input[disabled="disabled"] { display: none!important; }
+
+    #library-search-form-container div:before { display: none!important; }
+
+    #library-left-nav .library-collection a { background-color: var(--main-color)!important;
+        border-top: 1px solid var(--border-color)!important;
+        color: var(--text-color)!important; }
+
+    #library-left-nav .library-collection a.active { background-color: var(--secondary)!important; }
+
+    #collection-toolbar .action-links-unfold { background: none!important;
+        background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    #collection-toolbar .action-links-unfold-text { color: var(--text-color)!important; }
+
+    .add-resource-app-wrapper .collection-title:hover { background-color: var(--main-color)!important; }
+
+    .instructions, .directions, .install-agreement { color: #f32020; }
+
+    /* Linked Apps */
+    #schoology-app-container { background-color: white!important; }
+    
+    /* Join Courses Page */
+    
+    #secondary-tabs-wrapper .link-wrapper a[href^="/courses"] { background: none; 
+        border: 1px solid var(--border-color)!important;
+        border-bottom: none!important; 
+        padding-bottom: 12px; }
+    
+    #secondary-tabs-wrapper .active .link-wrapper a[href^="/courses"] { background: var(--secondary)!important;
+        top: -5px!important; }
+
+    /* Discussions */
+    
+    .warning { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important;
+        color: #f32020; }
+    
+    #sticky-wrapper .page-title { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important;
+        color: var(--text-color)!important; }
+
+    #content-wrapper { border-color: var(--border-color)!important; }
+
+    #content-wrapper .extra-details { border-color: var(--border-color)!important; }
+
+    #content-wrapper .extra-details p { color: var(--text-color)!important; }
+
+    #content-wrapper .discussion-prompt * { color: var(--text-color)!important; }
+
+    #content-wrapper .discussion-content { border-color: var(--border-color)!important; }
+
+    #content-wrapper .s-comments-post-form { background-color: var(--main-color)!important; }
+
+    #content-wrapper .s-comments-post-form #comment-placeholder { background-color: var(--main-color)!important; }
+
+    #content-wrapper .discussion-action-bar span:not(.user-stats-num):not(.user-unread-num) { color: var(--text-color)!important; }
+
+    #content-wrapper .discussion-action-bar { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
+
+    #content-wrapper .discussion-card { background: none!important;
+        box-shadow: none!important; }
+
+    #content-wrapper .comment { background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 3px;
+        padding-right: 5px!important; }
+
+    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important;
+        padding-right: 0!important; }
+
+    #content-wrapper .comment .comment-body-wrapper *:not(.clickable):not(a) { color: var(--text-color)!important; }
+
+    #content-wrapper .discussion-card .expander-bar { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
+
+    #content-wrapper .s_comments_level { border: none!important;
+        background: none!important; }
+
+    /* Assessments */
+    .s-assessment-question-fill-form .posted-time, #assessment-status * { color: var(--text-color)!important; }
+
+    .assessment-status.enabled { color: lime!important; }
+
+    .assessment-status.disabled { color: red!important; }
+    
+    /* Announcements */
+    
+    #important-post-body p, #important-post-body p span { color: var(--text-color)!important; }
+
+    /* Google Docs Linked Assignment Page */
+    .profile-container-4015500229 { background-color: var(--main-color)!important; }
+
+    .profile-header-2536997237 { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .heading1-root-929924197 { color: var(--text-color)!important; }
+    
+    .nav-breadcrumb-container-1732584003 { background-color: var(--main-color)!important; }
+    
+    .nav-breadcrumb-subContainer-4084051826:before { display: none; }
+
+    .nav-tab-selected-3323184817 { background-color: var(--secondary); }
+
+    .nav-tab-tab-325229968 { background-color: var(--main-color)!important;
+        border: 1px solid var(--border-color)!important; }
+
+    .nav-tab-tab-325229968:hover { background-color: var(--border-color)!important; }
+
+    .content-box-container-3232021855 { background-color: var(--main-color)!important; }
+
+    .typography-bodycopy-text-3028800701, .assignment-info-tab-description-2342305181 { color: var(--text-color)!important; }
+    
+    .document-header-module-header-3529942618 { background: none!important;
+        background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color); }
+    
+    .typography-button-primary-dark-button-3878422715, .typography-button-secondary-dark-button-2438965213, .typography-button-primary-dark-button-3878422715:hover, .typography-button-secondary-dark-button-2438965213:hover { border: 1px solid var(--border-color); }
+    
+    .typography-button-primary-dark-button-3878422715 span, .typography-button-secondary-dark-button-2438965213 span { color: var(--text-color); }
+    
+    .typography-button-primary-dark-button-3878422715, .typography-button-secondary-dark-button-2438965213 { background-color: var(--main-color); }
+
+    /* ------------ Profile ------------ */
+    .profile-header, .schools-label { color: var(--text-color)!important; }
+
+    .edit-profile-picture-hover { background: none!important; }
+
+    /* Portfolio */
+    .portfolio-save-status span, .portfolio-breadcrumb span { color: var(--text-color)!important; }
+
+    .portfolio-route-content, .portfolio-list__add-new, .portfolio-view, .portfolio-view__add-new, .item-form__title-bar, .item-file__preview-wrapper { background-color: var(--main-color)!important; }
+
+    .portfolio-view .form-control, .item-view-container .form-control { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+
+    .portfolio-view .item-card { background: none!important;
+        box-shadow: none!important; }
+
+    .portfolio-view .item-card__bottom { background-color: var(--main-color)!important; }
+
+    .portfolio-view .item-card * { color: var(--text-color)!important; }
+
+    /* ------------ Messages ------------ */
+    #center-top { background: none!important;
+        background-color: var(--main-color)!important; }
+
+    #tabs-wrapper .tabs.primary { background-color: var(--main-color)!important;
+        padding-left: 0!important; }
+    
+    #tabs-wrapper .tabs.primary .link-wrapper a[href="/messages"] { padding-bottom: 7px!important; }
+    
+    #tabs-wrapper .tabs.primary .active .link-wrapper a[href="/messages"] { padding-bottom: 8px!important; }
+
+    #tabs-wrapper .tabs.primary .link-wrapper a { background: none!important;
+        background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    #tabs-wrapper .tabs.primary .active a { background-color: var(--secondary)!important;
+        border-color: var(--border-color)!important; }
+
+    .sticky-table td, .thread-wrapper fieldset { background-color: var(--main-color)!important; }
+
+    #privatemsg-new fieldset, #privatemsg-new fieldset .userlist { background-color: var(--main-color)!important; }
+
+    #privatemsg-new fieldset label { color: var(--text-color)!important; }
+
+    #privatemsg-new fieldset .recipient-helper { background-color: var(--main-color)!important;
+        color: var(--text-color)!important; }
+
+    /* ------------ Calendar Settings and other misc pages -------------- */
+    .popups-body { background-color: var(--main-color); }
+
+    .fc-today { background-color: var(--border-color)!important; }
+
+    .fc-today .fc-day-number { color: var(--text-color)!important; }
+
+    .fc-button { background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
+        border-color: var(--border-color)!important; }
+
+    .fc-event .infotip, .fc-event-time { color: var(--main-color)!important; }
+
+    .fc-event-time:before { content: " @ "; }
+
+    .fc-view tbody td { border-color: var(--border-color); }
+
+    .fc-view tbody td:hover { background-color: #232323; }
+
+    .fcalendar-filter-menu-header { color: var(--link-text-color)!important; }
+
+    .calendar-form-container input.form-text { background-color: var(--main-color)!important; }
+    
+    .info-tab p span { color: var(--text-color)!important; }
+
+    #ui-datepicker-div, #ui-datepicker-div * { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    #ui-datepicker-div a:hover, #ui-datepicker-div td:hover { background-color: var(--secondary)!important; }
+
+    #smart-box-realm-selection-wrapper .name-wrapper { background-color: var(--secondary)!important; }
+
+    .fc-button-content, .fc-button-content span, #ui-datepicker-div *, #smart-box-realm-selection-wrapper .name-wrapper .name-text { color: var(--text-color)!important; }
+
+    #browse-realm-button:hover { background-position: 50% -614px!important; }
+
+    .popups-body { background-color: var(--main-color)!important; }
+
+    .popups-body .browse-realm-checkbox { background-color: var(--main-color)!important;
+        border: none!important; }
+
+    .browser-realm-checkboxes { background: none!important;
+        border: 1px solid var(--border-color)!important; }
+
+    .fcalendar-filter-menu-wrapper .menuopt-wrapper { background-color: var(--main-color)!important;
+        border-color: var(--border-color)!important; }
+
+    .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
+    
+    /* Lightbox or Image Viewer */
+    
+    #lightbox .lb-outerContainer, #lightbox .lb-dataContainer { background-color: var(--main-color); }
+    
+    #lightbox .lb-dataContainer .lb-number { color: var(--text-color); }
+    
+    /* Error Page */
+    
+    #error-page {background-color: var(--main-color)!important;
+        border: none!important; }
+    
+    #error-page ul li a[href="/home"] { position: absolute;
+        border: 1px solid var(--border-color);
+        padding: 10px 15px;
+        color: var(--text-color)!important;
+        left: 45%; }
+    
+    #error-page ul li a[href="/home"]:hover { background-color: var(--secondary);
+        color: lime!important;
+        text-decoration: none; }
+    
+    /* ------------ Settings Page ------------ */
+    
+    /* Account Settings */
+    
+    #tabs-wrapper .tabs.primary .link-wrapper a[href="/settings"] { padding-bottom: 7px!important; }
+    
+    #tabs-wrapper .tabs.primary .active .link-wrapper a[href="/settings"] { padding-bottom: 8px!important; }
+    
+    .user-info fieldset { background-color: var(--main-color); }
+    
+    .terms-msg, .user-info fieldset .description, #calendar-settings-wrapper .description, #edit-calendar-feed-submit, #user-link-wrapper .description { color: var(--text-color)!important; }
+    
+    .user-info fieldset .description a { color: var(--link-text-color)!important; }
+    
+    /* Notification Settings */
+    
+    #s-user-set-notifications-form .email-notify { background-color: var(--main-color)!important; }
+    
+    #s-user-set-notifications-form tr:hover { background: none!important; }
+    
+    #s-user-set-notifications-form table { margin-bottom: 40px; }
+    
+    .cellphone-container { background-color: var(--main-color);
+        border: 1px solid var(--border-color); }
+    
+    .cellphone-container ul li.device { border: 1px solid var(--border-color);
+        margin-top: 10px;
+        padding: 3px!important;
+        padding-right: 0!important; }
+    
+    .cellphone-container ul li.device:hover { background-color: var(--secondary); }
+    
+    /* Random Debugging Stuff */
+    
+    #course-completion-user-switcher-wrapper .form-item { background-color: var(--main-color)!important }
+    
+    #content-wrapper .gradebook-course .comment { background: none!important;
+        border: none!important;
+        color: var(--text-color); }
+    
+    #content-wrapper .feed-comments .comment { padding: 15px!important; }
+    #content-wrapper .feed-comments .comment:hover { padding-right: 10px!important; }
+    #content-wrapper .discussion-attachments { border-top: none; }
+    #content-wrapper .discussion-author { border-bottom: 1px solid var(--border-color); }
+    
+    .util-hover-background-color-cloud-grey-wHghL:hover { background-color: var(--secondary)!important; }
+}
