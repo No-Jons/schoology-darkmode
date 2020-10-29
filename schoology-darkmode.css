@@ -233,15 +233,16 @@
     /* Global Buttons */
     .submit-buttons, .submit-btn, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
 
-    .form-submit:hover, .submit-btn:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover { background-color: var(--secondary)!important; }
+    .form-submit:hover, .submit-btn:hover, .cancel-btn:hover, #edit-cancel:hover, #popup_submit:hover, #popup_close:hover, #popup_confirm:hover { background-color: var(--secondary)!important; }
 
     .submit-span-wrapper { border-color: var(--text-color)!important; }
 
-    .submit-btn, .cancel-btn, #edit-cancel, #popup_cancel, #popup_submit, #popup_close { background: none!important;
+    .submit-btn, .cancel-btn, #edit-cancel, #popup_cancel, #popup_submit, #popup_close, #popup_confirm { background: none!important;
         background-color: var(--main-color)!important;
         color: var(--text-color)!important; }
 
-    .popups-buttons-inner span, .submit-btn { border-color: var(--border-color)!important; }
+    .popups-buttons-inner span, .submit-btn { background-color: rgb(0,0,0,0)!important;
+        border-color: var(--border-color)!important; }
 
     .popups-processed, .action-links .clickable { color: var(--text-color)!important; }
 
@@ -271,6 +272,8 @@
     .action-links-unfold { display:block; 
         color: var(--text-color)!important; 
         outline: none!important; }
+    
+    .link-btn:active, .link-btn:focus { background-color: var(--secondary); }
 
     /* Course updates */
     .update-body p span { color: var(--text-color)!important; }
@@ -278,6 +281,16 @@
     .update-body p a span { color: var(--link-text-color)!important; }
 
     /* Notifications, Notifcation Settings Dropdown, Messages Dropdown */
+
+    .messages.status { background-color: var(--main-color);
+        border-color: var(--border-color); }
+    
+    .messages .message-text { color: lime; }
+    
+    .messages.status .messages-close-btn { color: var(--text-color)!important; }
+    
+    .messages.status .messages-close-btn:hover { background: none; }
+    
     .notif-setting-dropdown { background-color: var(--main-color)!important; }
 
     .notification-settings-wrapper .form-item .option:hover { background-color: var(--secondary)!important; }
@@ -464,9 +477,59 @@
 
     .assessment-status.disabled { color: red!important; }
     
+    .s-assessment-question-fill-form .matching-answers .form-text { color: var(--text-color);
+        border: 1px solid var(--border-color); }
+    
+    .s-assessment-question-fill-form .matching-answers .form-text:focus { background-color: var(--secondary); }
+    
+    .s-assessment-question-fill-form .matching-highlight .matching-answer { background-color: var(--main-color);
+        font-weight: bold; }
+    
+    .s-assessment-question-fill-form .matching-review .selected { background: none!important;
+        color: var(--text-color); }
+    
+    input.form-submit.assessment-nav { color: var(--text-color)!important; }
+    
+    .multiple-choice-review .selected .option-span { background-color: var(--secondary)!important;
+        color: var(--text-color)!important; }
+    
+    .question-review .matching-review .selected { background: none!important;
+        background-color: var(--secondary)!important; }
+    
+    .ui-selectmenu-status { background-color: var(--main-color);
+        border: 1px solid var(--border-color); }
+    
+    #s-assessment-view-submission-form .question-review .matching-review .selected, #s-assessment-view-submission-form .question-review .matching-review .selected .option-span { color: var(--text-color)!important; }
+    
+    .question-review .feedback-content.correct-feedback { background-color: var(--main-color);
+        border-color: var(--border-color);
+        color: lime; }
+    
+    .question-review .feedback-content.incorrect-feedback { background-color: var(--main-color);
+        border-color: var(--border-color);
+        color: red; }
+
+    .submission-info .view-info:active { background-color: var(--secondary); }
+    
+    .submission-info #student-info-table-wrapper { background-color: var(--main-color); }
+    
+    .submission-info #student-info-table-wrapper #student-info-table .small.gray { color: var(--text-color); }
+    
     /* Announcements */
     
     #important-post-body p, #important-post-body p span { color: var(--text-color)!important; }
+    
+    /* Submit Assignment */
+    
+    .popups-body .popups-tabs { background: none!important;
+        background-color: var(--main-color)!important; }
+    
+    .popups-body .popups-tab { color: var(--text-color); }
+    
+    .popups-body .popups-tabs .active { background-color: var(--secondary);
+        color: var(--text-color); }
+    
+    #resources-left-menu-wrapper { background-color: var(--main-color)!important; }
 
     /* Google Docs Linked Assignment Page */
     .profile-container-4015500229 { background-color: var(--main-color)!important; }
@@ -667,4 +730,6 @@
     .util-hover-background-color-cloud-grey-wHghL:hover { background-color: var(--secondary)!important; }
     
     ._3W1Kw { background-color: var(--main-color); }
+    
+    #schoology-app-container { background-color: var(--main-color)!important; }
 }
