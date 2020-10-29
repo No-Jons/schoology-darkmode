@@ -114,7 +114,7 @@
                        /* edit the background tag to read*/
                        /* `background: url("<URL TO YOUR IMAGE>");` */
     
-    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):before { content: "Home";
+    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):not(._37sne):before { content: "Home";
         font-size: 25px; }
     
     ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):hover { text-decoration: none!important;  }
@@ -574,6 +574,18 @@
     .submission-info #student-info-table-wrapper { background-color: var(--main-color); }
     
     .submission-info #student-info-table-wrapper #student-info-table .small.gray { color: var(--text-color); }
+    
+    .assessment-delivery-landing-app #breadcrumbs { background-color: var(--main-color)!important; }
+    
+    .assessment-delivery-landing-app .full-height { background-color: var(--main-color); }
+    
+    .assessment-delivery-landing-app .full-height h4 { background: none!important; }
+    
+    .fjQuT.uQOmx._2NVPS._1XQ7B._1URYE._2nSV0._26UWf._2mytC._3dHTa { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("https://i.stack.imgur.com/Iuyjf.jpg"); }
+    
+    ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { background: none!important;
+        color: var(--text-color);
+        z-index: 9999; }
     
     /* Announcements */
     
