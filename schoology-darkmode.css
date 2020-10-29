@@ -150,22 +150,10 @@
 
     ._1Z0RM li a:hover, ._1Z0RM li a:hover > span { background-color: var(--secondary)!important; }
     
-    ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { display: none;
-        background-color: var(--main-color)!important;
-        border: 1px solid var(--border-color);
-        border-radius: 2px!important;
-        padding-left: 0!important;
-        padding-bottom: 10px!important;
-        color: red!important; }
-    
-    ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr:after { content: " new notification";
-        text-transform: lowercase; }
-    
-    ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { position: absolute;
-        top: 40px;
-        right: -15px; }
-    
-    ._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ:hover > ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { display: block; }
+    ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { background-color: white;
+        color: var(--main-color);
+        width: auto;
+        padding: 0 7px; }
 
     ._9e7c_ { background-color: var(--shadow)!important; }
 
@@ -526,6 +514,8 @@
         padding-left: 0!important; }
     
     #tabs-wrapper .tabs.primary .link-wrapper a[href="/messages"] { padding-bottom: 7px!important; }
+    
+    #tabs-wrapper .tabs.primary .active .link-wrapper a[href="/messages"] { padding-bottom: 8px!important; }
 
     #tabs-wrapper .tabs.primary .link-wrapper a { background: none!important;
         background-color: var(--main-color)!important;
@@ -605,6 +595,38 @@
     #error-page ul li a[href="/home"]:hover { background-color: var(--secondary);
         color: lime!important;
         text-decoration: none; }
+    
+    /* ------------ Settings Page ------------ */
+    
+    /* Account Settings */
+    
+    #tabs-wrapper .tabs.primary .link-wrapper a[href="/settings"] { padding-bottom: 7px!important; }
+    
+    #tabs-wrapper .tabs.primary .active .link-wrapper a[href="/settings"] { padding-bottom: 8px!important; }
+    
+    .user-info fieldset { background-color: var(--main-color); }
+    
+    .terms-msg, .user-info fieldset .description, #calendar-settings-wrapper .description, #edit-calendar-feed-submit, #user-link-wrapper .description { color: var(--text-color)!important; }
+    
+    .user-info fieldset .description a { color: var(--link-text-color)!important; }
+    
+    /* Notification Settings */
+    
+    #s-user-set-notifications-form .email-notify { background-color: var(--main-color)!important; }
+    
+    #s-user-set-notifications-form tr:hover { background: none!important; }
+    
+    #s-user-set-notifications-form table { margin-bottom: 40px; }
+    
+    .cellphone-container { background-color: var(--main-color);
+        border: 1px solid var(--border-color); }
+    
+    .cellphone-container ul li.device { border: 1px solid var(--border-color); 
+        margin-top: 10px;
+        padding: 3px!important;
+        padding-right: 0!important; }
+    
+    .cellphone-container ul li.device:hover { background-color: var(--secondary); }
     
     /* Random Debugging Stuff */
     
