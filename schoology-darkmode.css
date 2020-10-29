@@ -44,6 +44,7 @@
     .s-enable-course-dashboard.theme-2016-layout #main { background: transparent!important; }
 
     /* sExtlink-processed are links that lead to other pages */
+    /* And yet they have to be overriden *again* to be this color sometimes :sob: */
     .sExtlink-processed { color: var(--link-text-color)!important; }
 
     /*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
@@ -162,10 +163,12 @@
     article { box-shadow: var(--shadow)!important; }
 
     .sgy-card { background-color: var(--main-color)!important;
-        border: 1px solid var(--border-color); }
+        border: none!important;
+        border-radius: 5px!important;
+        box-shadow: var(--shadow); }
 
     .sgy-card .sgy-card-lens { background-color: var(--main-color); 
-        border-bottom: 1px solid var(--border-color); }
+        border-radius: 5px 5px 0 0!important; }
     
     .sgy-card .sgy-multiline-ellipsis__split-part, ._1wP6w._23_WZ._2qcpH._3ghFm._17Z60._1Aph-.gs0RB { color: var(--text-color)!important; }
 
@@ -456,9 +459,13 @@
 
     #content-wrapper .comment { background-color: var(--secondary)!important;
         border: 1px solid var(--border-color) !important;
-        border-right: 5px solid var(--main-color)!important;
-        border-radius: 3px;
+        border-right: 5px solid var(--secondary)!important;
+        border-radius: 0 3px 3px 0;
         width: 90%; }
+    
+    #content-wrapper .comment:not(.first) {
+        margin-top: 25px;
+    }
 
     #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important; }
 
@@ -469,6 +476,38 @@
 
     #content-wrapper .s_comments_level { border: none!important;
         background: none!important; }
+    
+    .s_comments_level .discussion-card .expander-bar { position: absolute;
+        border: 1px solid var(--border-color)!important;
+        border-radius: 0 0 3px 3px;
+        padding-left: 4px;
+        padding-top: 4px;
+        padding-right: 11px;
+        width: 25px;
+        left: -9px;
+        transition: 150ms; }
+    
+    .s_comments_level .discussion-card .expander-hide-text, .s_comments_level .discussion-card .expander-text { opacity: 0;
+        font-size: 0;
+        color: var(--text-color);
+        padding-left: 15px;
+        z-index: -9999;
+        transition: 150ms ease; }
+    
+    .s_comments_level .discussion-card .expander-text { padding-left: 20px; }
+    
+    .s_comments_level .discussion-card .expander-text:before { content: "Show "; }
+    
+    .s_comments_level .expander-link-expanded, .s_comments_level .expander-link-collapsed { border: none!important; }
+    
+    .s_comments_level .expander-bar:hover > span .expander-hide-text, .s_comments_level .expander-bar:hover > span .expander-text { border-bottom: none;
+        opacity: 1;
+        font-size: 12px;
+        z-index: 100; }
+    
+    .s_comments_level .expander-bar:hover { opacity: 1;
+        z-index: 100;
+        width: 150px; }
 
     /* Assessments */
     .s-assessment-question-fill-form .posted-time, #assessment-status * { color: var(--text-color)!important; }
