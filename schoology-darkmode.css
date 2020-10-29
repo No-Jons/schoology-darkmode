@@ -167,7 +167,7 @@
     .sgy-card .sgy-card-lens { background-color: var(--main-color); 
         border-bottom: 1px solid var(--border-color); }
     
-    .sgy-card .sgy-multiline-ellipsis__split-part { color: var(--text-color)!important; }
+    .sgy-card .sgy-multiline-ellipsis__split-part, ._1wP6w._23_WZ._2qcpH._3ghFm._17Z60._1Aph-.gs0RB { color: var(--text-color)!important; }
 
     #attachment-selector { background-color: var(--main-color)!important; }
 
@@ -324,6 +324,17 @@
         background-color: var(--secondary)!important; }
 
     .grading-info .grading-category, .grading-info .grading-period, .grading-info .param-name, .grading-grade span { color: var(--text-color)!important; }
+    
+    .progressContainer { background-color: var(--main-color);
+        border: 1px solid var(--border-color)!important; }
+    
+    .progressContainer .progressDelete { background: none;
+        color: var(--text-color); }
+    
+    .progressContainer .progressDelete:after { content: "x";
+        margin-left: 4px; }
+    
+    .progressContainer .progressDelete:hover { text-decoration: none!important; }
 
     /* Comments */
     #edit-comment.add-comment-resize, .form-item .form-textarea { color: var(--text-color)!important; }
@@ -335,7 +346,10 @@
 
     #edge-filters-btn.clickable { color: var(--text-color)!important; }
 
-    #edge-filters #edge-filters-menu { background-color: var(--main-color)!important; }
+    #edge-filters #edge-filters-menu, .s-media-album-content-container { background-color: var(--main-color)!important; }
+    
+    .album-comments { background-color: var(--main-color); 
+        border: 1px solid var(--border-color); }
 
     /* Resources page in groups */
     #content-wrapper { background-color: var(--main-color)!important; }
@@ -429,11 +443,11 @@
 
     #content-wrapper .comment { background-color: var(--secondary)!important;
         border: 1px solid var(--border-color) !important;
+        border-right: 5px solid var(--main-color)!important;
         border-radius: 3px;
-        padding-right: 5px!important; }
+        width: 90%; }
 
-    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important;
-        padding-right: 0!important; }
+    #content-wrapper .comment:hover { border-right: 5px solid var(--text-color)!important; }
 
     #content-wrapper .comment .comment-body-wrapper *:not(.clickable):not(a) { color: var(--text-color)!important; }
 
@@ -649,4 +663,6 @@
     #content-wrapper .discussion-author { border-bottom: 1px solid var(--border-color); }
     
     .util-hover-background-color-cloud-grey-wHghL:hover { background-color: var(--secondary)!important; }
+    
+    ._3W1Kw { background-color: var(--main-color); }
 }
