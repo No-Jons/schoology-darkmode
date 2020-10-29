@@ -27,7 +27,7 @@
         color: var(--text-color)!important; }
     
     /*outer edge background color*/
-    #body { background-color: #121212!important; }
+    #body, .sidebar-left { background-color: #121212!important; }
 
     #main-content-wrapper { background-color: var(--main-color);
         box-shadow: var(--shadow)!important;
@@ -595,6 +595,8 @@
         border-color: var(--border-color)!important; }
 
     .fcalendar-filter-menu-wrapper .menuopt-wrapper .checkbox.filter-selected { background-color: var(--text-color)!important; }
+    
+    .info-tab a { background: none!important; }
     
     /* Lightbox or Image Viewer */
     
