@@ -792,4 +792,6 @@
     ._3W1Kw { background-color: var(--main-color); }
     
     #schoology-app-container { background-color: var(--main-color)!important; }
+    
+    a._3ghFm[href="/courses"] { color: var(--link-text-color)!important; }
 }
