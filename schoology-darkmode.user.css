@@ -508,6 +508,27 @@
     .s_comments_level .expander-bar:hover { opacity: 1;
         z-index: 100;
         width: 150px; }
+    
+    #comment-navigator, #comment-navigator td { background-color: var(--main-color); }
+    
+    #comment-navigator .small.gray { color: var(--text-color); }
+    
+    #comment-navigator .prev, #comment-navigator .next { background: none!important;
+        background-color: var(--secondary)!important; }
+    
+    #comment-navigator .prev span, #comment-navigator .next span { background: none!important;
+        font-size: 15px;
+        color: var(--text-color);
+        margin: -1px 8px 0 0!important;
+        width: auto; }
+    
+    #comment-navigator .next span { margin-left: 14px; }
+    
+    #comment-navigator .prev span:before { content: "<"; }
+    
+    #comment-navigator .next span:before { content: ">"; }
+    
+    #comment-navigator .num-comments-wrapper, #comment-navigator .num-comments-wrapper * { color: var(--text-color); }
 
     /* Assessments */
     .s-assessment-question-fill-form .posted-time, #assessment-status * { color: var(--text-color)!important; }
