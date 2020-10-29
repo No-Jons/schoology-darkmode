@@ -151,6 +151,7 @@
     ._1Z0RM li a:hover, ._1Z0RM li a:hover > span { background-color: var(--secondary)!important; }
     
     ._2JX1Q._2L4PN.les2-.USYsM.tAI8z.fioA9._1tpub._3RmDr { background-color: white;
+        border-radius: 10px;
         color: var(--main-color);
         width: auto;
         padding: 0 7px; }
