@@ -7,7 +7,7 @@
 
 ==/UserStyle== */
 
-@-moz-document domain("<YOUR DOMAIN HERE>") {
+@-moz-document domain("schoology.com") {
     /* ---------- Color variables!! ----------------- */
     :root { --main-color: #1E1E1E;
         --secondary: #383838;
