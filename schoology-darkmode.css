@@ -49,6 +49,22 @@
 
     /*Remove annoying-ass S in bottom corner. TELL ME IF IMPORTANT FOR YOU!!!! */
     ._pendo-launcher-badge_ { display: none;}
+    
+    /* Scrollbar */
+    
+    ::-webkit-scrollbar { width: 10px; }
+
+    ::-webkit-scrollbar-thumb { background: #444; }
+
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+    
+    ::-webkit-scrollbar-button { background: #444; }
+    
+    ::-webkit-scrollbar-button:hover { background: #555}
+    
+    /* Loading */
+    
+    .active-loader .loading-overlay, .request-wrapper.loading, .notification-wrapper.loading, .message-wrapper.loading, #popups-loading div, #tinymce-loader { background-color: var(--main-color)!important; }
 
     /* ---------- Login page syling ------------------ */
     .login-page, #supplementary, #page-footer { background-color: #121212; }
@@ -232,6 +248,22 @@
 
     .link-btn, a.ui-selectmenu { background: url("https://github.com/PseudonymPatel/schoology-darkmode/raw/master/images/button.gif");
         border-color: var(--border-color); }
+    
+    .upcoming-list { overflow: hidden;
+        position: relative; }
+    
+    .upcoming-list .empty { font-size: 15px;
+        text-align: center;
+        animation-name: scroll; 
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; }
+    
+    @keyframes scroll {
+        0% { transform: translateX(-100%); }
+        
+        100% { transform: translateX(100%); }
+    }
 
     /* Global Buttons */
     .submit-buttons, .submit-btn, .form-submit, .popups-buttons-inner { background-color: var(--main-color)!important; }
@@ -581,6 +613,8 @@
     
     .submission-info #student-info-table-wrapper #student-info-table .small.gray { color: var(--text-color); }
     
+    /* Different type of assessment for some reason ugh */
+    
     .assessment-delivery-landing-app #breadcrumbs { background-color: var(--main-color)!important; }
     
     .assessment-delivery-landing-app .full-height { background-color: var(--main-color); }
@@ -592,6 +626,78 @@
     ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { background: none!important;
         color: var(--text-color);
         z-index: 100; }
+    
+    ._3_bfp._24avl._1EyV_._3v0y7._2VUdE._3LeCL._2_GfG._3L6tC._10N3s._3Wb6n.dVlNp:hover { background: none!important; }
+    
+    ._3ESp2.dlCBz._1I3mg:not(.fjQuT) { display: none; }
+    
+    ._37sne._1tpub._2V6ED._2JX1Q .CjR09 ._2Vmxi._1pP6Q.L1I_b.Ivlky._3IpSn { border: none; }
+    
+    ._2JX1Q._1tpub._2nSV0._26UWf.N90-5._33zXx { background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color);
+        width: auto; }
+
+    ._3hM4e._3v0y7._3ghFm._2s0LQ._22tOa._1Z48V._1PDY6._3cn0v { color: lime;
+        text-align: center;}
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { position: absolute;
+        background-color: var(--secondary)!important;
+        border: 1px solid red;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3px;
+        padding: 15px 0 15px 0;
+        width: 99.8%;
+        left: 0;
+        top: 30px; }
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w { 
+        z-index: 101;
+        animation-name: warning-fade;
+        animation-duration: 14s;
+        animation-iteration-count: infinite; }
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w:hover {
+        animation-play-state: paused;
+    }
+    
+    @keyframes warning-fade {
+        0% { z-index: 101; }
+        
+        45% { z-index: 99; }
+        
+        100% { z-index: 101; }
+    }
+    
+    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover { background-color: var(--secondary); }
+    
+    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover > ._1tpub.zJU7e._2gJbx._3lLLU._2JX1Q._1wP6w._2qcpH._2VUdE._1D8fw.p4PpY._3hM4e { background: none!important; }
+    
+    .attempt-table-cell._1tpub._2JX1Q._1B_vk { margin: 0;
+        padding: 0; }
+    
+    /* Assessment Review */
+    
+    .QshRx.nOK4_._3QKei.UELBU, .QshRx.nOK4_._1Sb_q.WnfJn._3ARYD._3t4oF._24W2g._3mp5E._1XQ7B { background-color: var(--main-color)!important;
+        background-image: none; }
+    
+    .fjQuT.uQOmx._2NVPS._1pP6Q._1NV-a._26UWf._2mytC._3UytQ._3dHTa { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("https://i.stack.imgur.com/Iuyjf.jpg"); }
+    
+    ._1wP6w.xjR5v._2VUdE._2qcpH._1D8fw._16XsF._3p_KO._37sne { background: none!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article * { color: var(--text-color)!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .D4hfr._26UWf._2awxe._2UdSL._1tpub:hover * { background-color: var(--main-color)!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_correct { background-color: var(--secondary);
+        border-color: lime!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_incorrect { background-color: var(--secondary);
+        border-color: red!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_valid, .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_selected { background-color: var(--secondary);
+        border-color: orange!important; }
     
     /* Announcements */
     
@@ -830,89 +936,13 @@
     
     a._3ghFm[href="/courses"] { color: var(--link-text-color)!important; }
     
-    /* Scrollbar */
+    .popups-body #attachments #attachment-file-chunked { background-color: var(--main-color);
+        border-color: var(--border-color); }
     
-    ::-webkit-scrollbar { width: 10px; }
-
-    ::-webkit-scrollbar-thumb { background: #444; }
-
-    ::-webkit-scrollbar-thumb:hover { background: #555; }
+    .popups-body #attachments #attachment-file-chunked * { color: var(--text-color); }
     
-    ::-webkit-scrollbar-button { background: #444; }
+    .popups-body .avatar-chooser a { border-color: var(--border-color)!important;
+        transition: 150ms; }
     
-    ::-webkit-scrollbar-button:hover { background: #555}
-    
-    /* Different type of assessment for some reason ugh */
-    
-    ._3_bfp._24avl._1EyV_._3v0y7._2VUdE._3LeCL._2_GfG._3L6tC._10N3s._3Wb6n.dVlNp:hover { background: none!important; }
-    
-    ._3ESp2.dlCBz._1I3mg:not(.fjQuT) { display: none; }
-    
-    ._37sne._1tpub._2V6ED._2JX1Q .CjR09 ._2Vmxi._1pP6Q.L1I_b.Ivlky._3IpSn { border: none; }
-    
-    ._2JX1Q._1tpub._2nSV0._26UWf.N90-5._33zXx { background-color: var(--secondary)!important;
-        border: 1px solid var(--border-color);
-        width: auto; }
-
-    ._3hM4e._3v0y7._3ghFm._2s0LQ._22tOa._1Z48V._1PDY6._3cn0v { color: lime;
-        text-align: center;}
-    
-    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { position: absolute;
-        background-color: var(--secondary)!important;
-        border: 1px solid red;
-        color: red;
-        text-align: center;
-        font-weight: bold;
-        margin-top: 3px;
-        padding: 15px 0 15px 0;
-        width: 99.8%;
-        left: 0;
-        top: 30px; }
-    
-    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w { 
-        z-index: 101;
-        animation-name: warning-fade;
-        animation-duration: 14s;
-        animation-iteration-count: infinite; }
-    
-    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w:hover {
-        animation-play-state: paused;
-    }
-    
-    @keyframes warning-fade {
-        0% { z-index: 101; }
-        
-        45% { z-index: 99; }
-        
-        100% { z-index: 101; }
-    }
-    
-    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover { background-color: var(--secondary); }
-    
-    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover > ._1tpub.zJU7e._2gJbx._3lLLU._2JX1Q._1wP6w._2qcpH._2VUdE._1D8fw.p4PpY._3hM4e { background: none!important; }
-    
-    .attempt-table-cell._1tpub._2JX1Q._1B_vk { margin: 0;
-        padding: 0; }
-    
-    /* Assessment Review */
-    
-    .QshRx.nOK4_._3QKei.UELBU, .QshRx.nOK4_._1Sb_q.WnfJn._3ARYD._3t4oF._24W2g._3mp5E._1XQ7B { background-color: var(--main-color)!important;
-        background-image: none; }
-    
-    .fjQuT.uQOmx._2NVPS._1pP6Q._1NV-a._26UWf._2mytC._3UytQ._3dHTa { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("https://i.stack.imgur.com/Iuyjf.jpg"); }
-    
-    ._1wP6w.xjR5v._2VUdE._2qcpH._1D8fw._16XsF._3p_KO._37sne { background: none!important; }
-    
-    .QshRx.nOK4_._3QKei.UELBU article * { color: var(--text-color)!important; }
-    
-    .QshRx.nOK4_._3QKei.UELBU article .D4hfr._26UWf._2awxe._2UdSL._1tpub:hover * { background-color: var(--main-color)!important; }
-    
-    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_correct { background-color: var(--secondary);
-        border-color: lime!important; }
-    
-    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_incorrect { background-color: var(--secondary);
-        border-color: red!important; }
-    
-    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_valid, .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_selected { background-color: var(--secondary);
-        border-color: orange!important; }
+    .popups-body .avatar-chooser a:hover { transform: scale(1.2); }
 }
