@@ -114,7 +114,7 @@
                        /* edit the background tag to read*/
                        /* `background: url("<URL TO YOUR IMAGE>");` */
     
-    ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):not(._37sne):before { content: "Home";
+    ._2JX1Q._1LY8n._2SVA_._9GDcm:before { content: "Home";
         font-size: 25px; }
     
     ._2JX1Q:not(._1k0yk):not(._2L4PN):not(._3skcp):hover { text-decoration: none!important;  }
@@ -424,6 +424,12 @@
     
     #secondary-tabs-wrapper .active .link-wrapper a[href^="/courses"] { background: var(--secondary)!important;
         top: -5px!important; }
+    
+    /* Pages */
+    
+    .standard-page * { color: var(--text-color)!important; }
+    
+    .standard-page a, .standard-page a * { color: var(--link-text-color)!important; }
 
     /* Discussions */
     
@@ -585,7 +591,7 @@
     
     ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { background: none!important;
         color: var(--text-color);
-        z-index: 9999; }
+        z-index: 100; }
     
     /* Announcements */
     
@@ -801,9 +807,112 @@
     
     .util-hover-background-color-cloud-grey-wHghL:hover { background-color: var(--secondary)!important; }
     
+    .popups-dropbox-submit { background-color: var(--main-color); }
+    
+    .popups-body .assignment-details { margin: 5px;
+        border-bottom: none!important; }
+    
+    .popups-body .posted-time, .popups-body .posted-time * { color: var(--text-color); }
+    
+    .popups-body #right-column { margin-top: 20px; }
+    
+    .popups-body #right-column .submit-assignment a { font-size: 10px; }
+    
+    .popups-body .comment-container .hide-label .form-item { padding-left: 5px!important; }
+    
+    .popups-body .comment-container .submit-span-wrapper { margin-left: 0!important; }
+    
+    .user-notifications { background-color: var(--main-color)!important; }
+    
     ._3W1Kw { background-color: var(--main-color); }
     
     #schoology-app-container { background-color: var(--main-color)!important; }
     
     a._3ghFm[href="/courses"] { color: var(--link-text-color)!important; }
+    
+    /* Scrollbar */
+    
+    ::-webkit-scrollbar { width: 10px; }
+
+    ::-webkit-scrollbar-thumb { background: #444; }
+
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+    
+    ::-webkit-scrollbar-button { background: #444; }
+    
+    ::-webkit-scrollbar-button:hover { background: #555}
+    
+    /* Different type of assessment for some reason ugh */
+    
+    ._3_bfp._24avl._1EyV_._3v0y7._2VUdE._3LeCL._2_GfG._3L6tC._10N3s._3Wb6n.dVlNp:hover { background: none!important; }
+    
+    ._3ESp2.dlCBz._1I3mg:not(.fjQuT) { display: none; }
+    
+    ._37sne._1tpub._2V6ED._2JX1Q .CjR09 ._2Vmxi._1pP6Q.L1I_b.Ivlky._3IpSn { border: none; }
+    
+    ._2JX1Q._1tpub._2nSV0._26UWf.N90-5._33zXx { background-color: var(--secondary)!important;
+        border: 1px solid var(--border-color);
+        width: auto; }
+
+    ._3hM4e._3v0y7._3ghFm._2s0LQ._22tOa._1Z48V._1PDY6._3cn0v { color: lime;
+        text-align: center;}
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w, ._2qcpH._3ghFm._22tOa.drGks._23_WZ._1wP6w { position: absolute;
+        background-color: var(--secondary)!important;
+        border: 1px solid red;
+        color: red;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 3px;
+        padding: 15px 0 15px 0;
+        width: 99.8%;
+        left: 0;
+        top: 30px; }
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w { 
+        z-index: 101;
+        animation-name: warning-fade;
+        animation-duration: 14s;
+        animation-iteration-count: infinite; }
+    
+    ._37sne ._1tpub._2V6ED ._2qcpH._3ghFm._22tOa.drGks.xjR5v._1wP6w:hover {
+        animation-play-state: paused;
+    }
+    
+    @keyframes warning-fade {
+        0% { z-index: 101; }
+        
+        45% { z-index: 99; }
+        
+        100% { z-index: 101; }
+    }
+    
+    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover { background-color: var(--secondary); }
+    
+    ._1EwGW._2v5vf._2awxe._3skcp._1tpub.Ivlky:hover > ._1tpub.zJU7e._2gJbx._3lLLU._2JX1Q._1wP6w._2qcpH._2VUdE._1D8fw.p4PpY._3hM4e { background: none!important; }
+    
+    .attempt-table-cell._1tpub._2JX1Q._1B_vk { margin: 0;
+        padding: 0; }
+    
+    /* Assessment Review */
+    
+    .QshRx.nOK4_._3QKei.UELBU, .QshRx.nOK4_._1Sb_q.WnfJn._3ARYD._3t4oF._24W2g._3mp5E._1XQ7B { background-color: var(--main-color)!important;
+        background-image: none; }
+    
+    .fjQuT.uQOmx._2NVPS._1pP6Q._1NV-a._26UWf._2mytC._3UytQ._3dHTa { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("https://i.stack.imgur.com/Iuyjf.jpg"); }
+    
+    ._1wP6w.xjR5v._2VUdE._2qcpH._1D8fw._16XsF._3p_KO._37sne { background: none!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article * { color: var(--text-color)!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .D4hfr._26UWf._2awxe._2UdSL._1tpub:hover * { background-color: var(--main-color)!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_correct { background-color: var(--secondary);
+        border-color: lime!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_incorrect { background-color: var(--secondary);
+        border-color: red!important; }
+    
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_valid, .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_selected { background-color: var(--secondary);
+        border-color: orange!important; }
 }
