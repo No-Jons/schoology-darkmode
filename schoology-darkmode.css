@@ -503,6 +503,7 @@
         border: 1px solid var(--border-color) !important;
         border-right: 5px solid var(--secondary)!important;
         border-radius: 0 3px 3px 0;
+        padding: 9px!important;
         width: 90%; }
     
     #content-wrapper .comment:not(.first) {
