@@ -62,9 +62,13 @@
     
     ::-webkit-scrollbar-button:hover { background: #555}
     
+    ::-webkit-scrollbar-corner { background: #444; }
+    
     /* Loading */
     
     .active-loader .loading-overlay, .request-wrapper.loading, .notification-wrapper.loading, .message-wrapper.loading, #popups-loading div, #tinymce-loader { background-color: var(--main-color)!important; }
+    
+    img[src$="0e0a54af6cb4261cfce4e1258795d08a.gif"] { display: none; }
 
     /* ---------- Login page syling ------------------ */
     .login-page, #supplementary, #page-footer { background-color: #121212; }
@@ -260,9 +264,9 @@
         animation-iteration-count: infinite; }
     
     @keyframes scroll {
-        0% { transform: translateX(-100%); }
+        0% { transform: translateX(100%); }
         
-        100% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
     }
 
     /* Global Buttons */
@@ -696,7 +700,7 @@
     .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_incorrect { background-color: var(--secondary);
         border-color: red!important; }
     
-    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_valid, .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_selected { background-color: var(--secondary);
+    .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_valid, .QshRx.nOK4_._3QKei.UELBU article .lrn .lrn_response .lrn_selected:not(.lrn_incorrect):not(.lrn_correct) { background-color: var(--secondary);
         border-color: orange!important; }
     
     /* Announcements */
